@@ -13,6 +13,7 @@ module.exports = {
 			}
 		},
 		`gatsby-plugin-react-helmet`,
+		`gatsby-plugin-emotion`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`
 	]
