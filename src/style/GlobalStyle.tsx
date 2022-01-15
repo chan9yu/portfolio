@@ -3,32 +3,54 @@ import reset from 'styled-reset'
 import { Global, css } from '@emotion/react'
 
 const DefaultStyle = css`
-	@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 	${reset}
 	html {
 		font-size: 100%;
 	}
 	body {
-		background: #f5f5f5;
 		overflow-x: hidden;
 		line-height: 1.4;
 		font-family: 'Noto Sans KR', sans-serif;
 		font-size: 1em;
 		box-sizing: border-box;
-		color: #333;
 		-ms-overflow-style: none;
 		&::-webkit-scrollbar {
 			display: none !important;
 		}
 	}
-	a {
-		color: #1abc9c;
+	@font-face {
+		font-family: 'Noto Sans KR';
+		font-weight: 900;
+		src: url('/fonts/NotoSansKR-Black.otf') format('truetype');
+	}
+	@font-face {
+		font-family: 'Noto Sans KR';
+		font-weight: 700;
+		src: url('/fonts/NotoSansKR-Bold.otf') format('truetype');
+	}
+	@font-face {
+		font-family: 'Noto Sans KR';
+		font-weight: 500;
+		src: url('/fonts/NotoSansKR-Medium.otf') format('truetype');
+	}
+	@font-face {
+		font-family: 'Noto Sans KR';
+		font-weight: 400;
+		src: url('/fonts/NotoSansKR-Regular.otf') format('truetype');
+	}
+	@font-face {
+		font-family: 'Noto Sans KR';
 		font-weight: 300;
-		text-decoration: none;
-		transition: 0.5s;
-		& :hover {
-			color: #16a085;
-		}
+		src: url('/fonts/NotoSansKR-Light.otf') format('truetype');
+	}
+	@font-face {
+		font-family: 'Noto Sans KR';
+		font-weight: 100;
+		src: url('/fonts/NotoSansKR-Thin.otf') format('truetype');
+	}
+	@font-face {
+		font-family: 'JuliusSansOne';
+		src: url('/fonts/JuliusSansOne-Regular.ttf') format('truetype');
 	}
 	@media (min-width: 300px) {
 		html {
