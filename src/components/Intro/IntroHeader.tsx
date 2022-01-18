@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from '@emotion/styled'
+import { FaGithub, FaBlog } from 'react-icons/fa'
 
 import Logo from 'components/common/Logo'
+import PageMenu from 'components/common/PageMenu'
 
 const PROFILE_IMG =
 	'https://avatars.githubusercontent.com/u/80776262?v=4' as const
@@ -11,33 +13,13 @@ const HeaderWarpper = styled.header`
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 50px;
-`
-
-const PageMenus = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	.page_menus_btn {
-		width: 110px;
-		padding: 5px 0;
-		border-radius: 5px;
-		font-size: ${({ theme }) => theme.fontSizes.base};
-		color: ${({ theme }) => theme.colors.fontColor};
-		font-weight: 100;
-		font-family: 'Noto Sans KR';
-		transition: 0.5s;
-		background-color: transparent;
-		&:hover {
-			background-color: ${({ theme }) => theme.colors.bgColor};
-		}
-	}
+	border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
 `
 
 const AboutMenus = styled.div`
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 30px;
 	.about_menus_btn {
 		font-size: ${({ theme }) => theme.fontSizes.base};
 		color: ${({ theme }) => theme.colors.fontColor};
@@ -47,10 +29,10 @@ const AboutMenus = styled.div`
 		width: 34px;
 		height: 34px;
 		border-radius: 50%;
-		cursor: pointer;
 	}
 	& > * {
 		transition: 0.5s;
+		cursor: pointer;
 		&:hover {
 			filter: brightness(70%);
 		}
@@ -60,14 +42,12 @@ const AboutMenus = styled.div`
 const IntroHeaderWarpperHeader = () => {
 	return (
 		<HeaderWarpper>
-			<Logo />
-			<PageMenus>
-				<button className="page_menus_btn">ABOUT</button>
-				<button className="page_menus_btn">PORTFOLIO</button>
-			</PageMenus>
+			<Logo size="base" />
+			{/* common 으로 옮기기 */}
+			<PageMenu />
 			<AboutMenus>
-				<button className="about_menus_btn">BLOG</button>
-				<button className="about_menus_btn">GITHUB</button>
+				<FaBlog fill="#ddd" size={25} />
+				<FaGithub fill="#ddd" size={25} />
 				<img className="about_menus_img" src={PROFILE_IMG} alt="profile_img" />
 			</AboutMenus>
 		</HeaderWarpper>
