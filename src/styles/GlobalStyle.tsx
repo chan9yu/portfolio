@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
-import reset from 'styled-reset'
+import emotionReset from 'emotion-reset'
 import { Global, css } from '@emotion/react'
 
 const DefaultStyle = css`
-	${reset}
+	${emotionReset}
 	html {
 		font-size: 100%;
 	}
@@ -16,6 +16,18 @@ const DefaultStyle = css`
 		-ms-overflow-style: none;
 		&::-webkit-scrollbar {
 			display: none !important;
+		}
+		button {
+			cursor: pointer;
+		}
+		input,
+		button {
+			border: none;
+			&:focus,
+			&:active {
+				outline: none;
+				box-shadow: none;
+			}
 		}
 	}
 	@font-face {

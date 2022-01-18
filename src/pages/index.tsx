@@ -1,13 +1,21 @@
 import React from 'react'
 
-import AppLayout from 'components/layout/AppLayout'
+import styled from '@emotion/styled'
+import RootWrapper from 'components/common/RootWrapper'
+import IntroHeader from 'components/Intro/IntroHeader'
 
-const IndexPage = () => (
-	<AppLayout>
-		<div>1</div>
-		<div>2</div>
-		<div>3</div>
-	</AppLayout>
-)
+const Container = styled.div`
+	background-color: ${({ theme }) => theme.colors.introBgColor};
+`
+
+const IndexPage = () => {
+	return (
+		<RootWrapper>
+			<Container>
+				<IntroHeader />
+			</Container>
+		</RootWrapper>
+	)
+}
 
 export default IndexPage

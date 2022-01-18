@@ -22,12 +22,13 @@ const deviceSizes = {
 }
 
 const colors = {
-	black: '#000',
-	white: '#fff',
-	gray_b: '#333',
-	gray_w: '#ddd',
-	primary: '#6C5CE7',
-	secondary: '#A29BFE'
+	bgColor: '#202124',
+	introBgColor: '#35363A',
+	btnColor: '#303134',
+	btnBorderColor: '#5F6368',
+	fontColor: '#FFFFFF',
+	primary: '#D35400',
+	gray: '#707070'
 }
 
 const device = {
@@ -46,4 +47,5 @@ const theme = {
 	device
 }
 
+export type Theme = typeof theme
 export default theme
