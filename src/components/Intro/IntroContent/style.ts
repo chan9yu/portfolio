@@ -6,4 +6,5 @@ export const IntroContentContainer = styled.div`
 	justify-content: center;
 	align-items: center;
 	gap: 50px;
+	padding-bottom: 100px;
 `

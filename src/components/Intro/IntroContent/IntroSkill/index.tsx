@@ -6,15 +6,15 @@ import { SkillContainer } from './style'
 const IntroSkill = () => {
 	const skills = useMemo(
 		() => [
-			{ name: 'HTML', img: '/html.png' },
-			{ name: 'CSS3', img: '/css.png' },
-			{ name: 'JavaScript', img: '/javascript.png' },
-			{ name: 'TypeScript', img: '/tyepscript.png' },
-			{ name: 'React', img: '/react.png' },
-			{ name: 'Redux', img: '/redux.png' },
-			{ name: 'Next', img: '/next.png' },
-			{ name: 'Vue', img: '/vue.png' },
-			{ name: 'Nuxt', img: '/nuxt.png' },
+			{ name: 'HTML5', img: '/fe/html.png' },
+			{ name: 'CSS3', img: '/fe/css.png' },
+			{ name: 'JavaScript', img: '/fe/javascript.png' },
+			{ name: 'TypeScript', img: '/fe/tyepscript.png' },
+			{ name: 'React', img: '/fe/react.png' },
+			{ name: 'Redux', img: '/fe/redux.png' },
+			{ name: 'Next', img: '/fe/next.png' },
+			{ name: 'Vue', img: '/fe/vue.png' },
+			{ name: 'Nuxt', img: '/fe/nuxt.png' },
 			{ name: '더 보기', img: '' }
 		],
 		[]

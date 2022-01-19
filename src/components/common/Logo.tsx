@@ -1,15 +1,15 @@
 import styled from '@emotion/styled'
+import { Link } from 'gatsby'
 import React, { FC } from 'react'
 
-const LogoWrapper = styled.span<{ size: 'title' | 'base' }>`
-	font-family: 'JuliusSansOne';
-	font-size: ${({ theme, size }) =>
-		size === 'title' ? theme.fontSizes.bigTitleSize : theme.fontSizes.xl};
+const LogoWrapper = styled.span<{ size: 'bigTitleSize' | 'big' | 'xl' }>`
+	font-family: 'Product Sans';
+	font-size: ${({ theme, size }) => theme.fontSizes[size]};
 	font-weight: 100;
 	color: ${({ theme }) => theme.colors.fontColor};
 	cursor: pointer;
 	transition: 0.5s;
-	> span {
+	.logo {
 		color: ${({ theme }) => theme.colors.primary};
 	}
 	&:hover {
@@ -18,13 +18,15 @@ const LogoWrapper = styled.span<{ size: 'title' | 'base' }>`
 `
 
 interface Props {
-	size: 'title' | 'base'
+	size: 'bigTitleSize' | 'big' | 'xl'
 }
 
 const Logo: FC<Props> = ({ size }) => {
 	return (
 		<LogoWrapper size={size}>
-			<span>CHAN</span>GYU
+			<Link to="/">
+				<span className="logo">Chan</span>gyu
+			</Link>
 		</LogoWrapper>
 	)
 }

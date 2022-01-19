@@ -29,6 +29,10 @@ const DefaultStyle = css`
 				box-shadow: none;
 			}
 		}
+		a {
+			text-decoration: none;
+			color: #fff;
+		}
 	}
 	@font-face {
 		font-family: 'Noto Sans KR';
@@ -61,8 +65,8 @@ const DefaultStyle = css`
 		src: url('/fonts/NotoSansKR-Thin.otf') format('truetype');
 	}
 	@font-face {
-		font-family: 'JuliusSansOne';
-		src: url('/fonts/JuliusSansOne-Regular.ttf') format('truetype');
+		font-family: 'Product Sans';
+		src: url('/fonts/Product-Sans-Regular.ttf') format('truetype');
 	}
 	@media (min-width: 300px) {
 		html {

@@ -11,8 +11,8 @@ const PROFILE_IMG =
 const IntroHeaderWarpperHeader = () => {
 	return (
 		<HeaderWarpper>
-			<Logo size="base" />
-			<PageMenu />
+			<Logo size="xl" />
+			<PageMenu intro />
 			<AboutMenus>
 				<FaBlog fill="#ddd" size={25} />
 				<FaGithub fill="#ddd" size={25} />

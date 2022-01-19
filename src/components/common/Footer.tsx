@@ -22,7 +22,7 @@ const Footer = () => {
 
 	return (
 		<Container>
-			<Logo size="base" />
+			<Logo size="xl" />
 			<span className="footer__copyright">
 				Copyright &copy; {newYear} Changyu All Rights Reserved.
 			</span>

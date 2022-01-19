@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 
 export const SkillContainer = styled.div`
+	width: 490px;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	row-gap: 60px;
@@ -23,6 +24,9 @@ export const SkillContainer = styled.div`
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			> img {
+				width: 60%;
+			}
 		}
 	}
 	.skill__name {

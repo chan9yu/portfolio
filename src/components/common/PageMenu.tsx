@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { FC } from 'react'
 import styled from '@emotion/styled'
+import { Link } from 'gatsby'
 
-const Container = styled.div`
+const Container = styled.div<{ intro: boolean }>`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
 	.page_menus_btn {
 		width: 110px;
 		padding: 5px 0;
@@ -17,15 +17,22 @@ const Container = styled.div`
 		transition: 0.5s;
 		background-color: transparent;
 		&:hover {
-			background-color: ${({ theme }) => theme.colors.bgColor};
+			background-color: ${({ theme, intro }) =>
+				intro ? theme.colors.bgColor : theme.colors.introBgColor};
 		}
 	}
 `
 
-const PageMenu = () => {
+interface Props {
+	intro: boolean
+}
+
+const PageMenu: FC<Props> = ({ intro }) => {
 	return (
-		<Container>
-			<button className="page_menus_btn">ABOUT</button>
+		<Container intro={intro}>
+			<button className="page_menus_btn">
+				<Link to="/about">ABOUT</Link>
+			</button>
 			<button className="page_menus_btn">PORTFOLIO</button>
 		</Container>
 	)

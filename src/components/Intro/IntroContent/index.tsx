@@ -8,7 +8,7 @@ import { IntroContentContainer } from './style'
 const IntroContent = () => {
 	return (
 		<IntroContentContainer>
-			<Logo size="title" />
+			<Logo size="bigTitleSize" />
 			<IntroInput />
 			<IntroSkill />
 		</IntroContentContainer>
