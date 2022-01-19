@@ -1,4 +1,5 @@
 import React from 'react'
+import { RiGithubFill, RiKakaoTalkFill, RiMailFill } from 'react-icons/ri'
 
 import { ProfileCardWrapper } from './style'
 
@@ -10,10 +11,23 @@ const ProfileCard = () => {
 		<ProfileCardWrapper>
 			<div className="card__header">
 				<div className="card__header_info">
-					<h2>여찬규</h2>
-					<span>Mail: wry5533@gmail.com</span>
-					<span>Kakaotalk: wry5533</span>
-					<span>GitHub: github.com/changyuyeo</span>
+					<h2>Yeo Changyu</h2>
+					<span className="card__info_data">
+						<RiMailFill size={20} /> wry5533@gmail.com
+					</span>
+					<span className="card__info_data">
+						<RiKakaoTalkFill size={20} /> wrybary
+					</span>
+					<span className="card__info_data">
+						<RiGithubFill size={20} />{' '}
+						<a
+							href="https://github.com/changyuyeo"
+							target="_blank"
+							rel="noreferrer noopener"
+						>
+							https://github.com/changyuyeo
+						</a>
+					</span>
 				</div>
 				<img src={PROFILE_IMG} alt="profile_img" />
 			</div>

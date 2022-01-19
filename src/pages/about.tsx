@@ -5,6 +5,7 @@ import AppLayout from 'components/layout/AppLayout'
 import Introduce from 'components/about/Introduce'
 import Skills from 'components/about/Skills'
 import TimeLine from 'components/about/TimeLine'
+import AboutFooter from 'components/about/AboutFooter'
 
 const Container = styled.div`
 	padding: 50px 0 150px;
@@ -28,6 +29,7 @@ const AboutPage = () => {
 				<Divide />
 				<TimeLine />
 				<Divide />
+				<AboutFooter />
 			</Container>
 		</AppLayout>
 	)

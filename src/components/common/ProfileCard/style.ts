@@ -20,9 +20,19 @@ export const ProfileCardWrapper = styled.div`
 				font-size: ${({ theme }) => theme.fontSizes.xxl};
 				font-weight: 600;
 			}
-			> span {
+			.card__info_data {
 				font-size: ${({ theme }) => theme.fontSizes.base};
 				font-weight: 100;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				> a {
+					color: ${({ theme }) => theme.colors.primary};
+					transition: 0.5s;
+					&:hover {
+						filter: brightness(70%);
+					}
+				}
 			}
 		}
 		> img {

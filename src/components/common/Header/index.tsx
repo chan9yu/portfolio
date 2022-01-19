@@ -7,11 +7,17 @@ import PageMenu from '../PageMenu'
 import HeaderMenu from './HeaderMenu'
 
 const HeaderWrapper = styled.header`
-	padding: 30px 0;
+	width: 100%;
+	padding: 30px 0 15px;
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
+	gap: 15px;
 	border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
+	background-color: ${({ theme }) => theme.colors.bgColor};
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
 	.header__container {
 		padding: 0 50px;
 		display: flex;

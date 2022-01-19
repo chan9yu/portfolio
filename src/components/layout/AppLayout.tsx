@@ -7,6 +7,7 @@ import Footer from 'components/common/Footer'
 import ProfileCard from 'components/common/ProfileCard'
 
 const Container = styled.div`
+	padding-top: 130px;
 	background-color: ${({ theme }) => theme.colors.bgColor};
 	.content_box {
 		width: 79.1%;
