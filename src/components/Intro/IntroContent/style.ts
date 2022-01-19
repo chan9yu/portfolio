@@ -5,4 +5,5 @@ export const IntroContentContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 50px;
 `

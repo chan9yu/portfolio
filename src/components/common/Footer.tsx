@@ -24,7 +24,7 @@ const Footer = () => {
 		<Container>
 			<Logo size="base" />
 			<span className="footer__copyright">
-				Copyright &copy; {newYear} Yeo Changyu All Rights Reserved.
+				Copyright &copy; {newYear} Changyu All Rights Reserved.
 			</span>
 		</Container>
 	)

@@ -8,6 +8,10 @@ import IntroContent from 'components/Intro/IntroContent'
 
 const Container = styled.div`
 	background-color: ${({ theme }) => theme.colors.introBgColor};
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
 `
 
 const IndexPage = () => {
