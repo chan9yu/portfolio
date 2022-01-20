@@ -8,7 +8,7 @@ import GlobalStyle from 'styles/GlobalStyle'
 const RootWrapper: FC = ({ children }) => {
 	const title = `Changyu's Portfolio`
 	const description = '안녕하세요 프론트엔드 개발자 여찬규 입니다!'
-	const image = null
+	const image = 'https://avatars.githubusercontent.com/u/80776262?v=4'
 	const url = 'https://changyu-portfolio.netlify.app/'
 
 	return (
