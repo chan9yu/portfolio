@@ -19,7 +19,7 @@ const ProfileCard = () => {
 						<RiKakaoTalkFill size={20} /> wrybary
 					</span>
 					<span className="card__info_data">
-						<RiGithubFill size={20} />{' '}
+						<RiGithubFill size={20} />
 						<a
 							href="https://github.com/changyuyeo"
 							target="_blank"
