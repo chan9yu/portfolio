@@ -15,6 +15,9 @@ const Container = styled.footer`
 		font-size: ${({ theme }) => theme.fontSizes.base};
 		color: ${({ theme }) => theme.colors.gray};
 	}
+	@media ${({ theme }) => theme.device.mobileL} {
+		padding: 10px 0;
+	}
 `
 
 const Footer = () => {

@@ -20,6 +20,10 @@ const Container = styled.div<{ intro: boolean }>`
 			background-color: ${({ theme, intro }) =>
 				intro ? theme.colors.bgColor : theme.colors.introBgColor};
 		}
+		@media ${({ theme }) => theme.device.mobileL} {
+			width: auto;
+			padding: 5px 10px;
+		}
 	}
 `
 

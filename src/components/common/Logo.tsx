@@ -15,6 +15,9 @@ const LogoWrapper = styled.span<{ size: 'bigTitleSize' | 'big' | 'xl' }>`
 	&:hover {
 		filter: brightness(70%);
 	}
+	@media ${({ theme }) => theme.device.mobileL} {
+		font-size: ${({ size }) => size === 'xl' && '15px'};
+	}
 `
 
 interface Props {

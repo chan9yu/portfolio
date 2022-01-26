@@ -10,7 +10,7 @@ export const IntroContentContainer = styled.div`
 	gap: 50px;
 	padding-bottom: 100px;
 	@media ${({ theme }) => theme.device.tabletL} {
-		width: 75%;
+		width: 80%;
 		gap: 40px;
 		padding-bottom: 0;
 	}
