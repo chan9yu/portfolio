@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { useMediaQuery } from 'react-responsive'
 import { FiSearch, FiMic } from 'react-icons/fi'
 
 import { InputContainer } from './style'
@@ -7,6 +8,8 @@ const IntroInput = () => {
 	const txt = '안녕하세요 성장하는 FE개발자 여찬규 입니다!'
 	const [text, setText] = useState('')
 	const [count, setCount] = useState(0)
+
+	const isMobile = useMediaQuery({ query: '(max-width: 425px)' })
 
 	const interval = useRef<NodeJS.Timer | null>(null)
 
@@ -31,9 +34,13 @@ const IntroInput = () => {
 
 	return (
 		<InputContainer>
-			<FiSearch className="search__icon" size={20} color="#fff" />
+			<FiSearch
+				className="search__icon"
+				size={isMobile ? 15 : 20}
+				color="#fff"
+			/>
 			<div className="input__text">{text}</div>
-			<FiMic className="mic__icon" size={20} color="#fff" />
+			<FiMic className="mic__icon" size={isMobile ? 15 : 20} color="#fff" />
 		</InputContainer>
 	)
 }

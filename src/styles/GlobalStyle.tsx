@@ -13,6 +13,7 @@ const DefaultStyle = css`
 		font-family: 'Noto Sans KR', sans-serif;
 		font-size: 1em;
 		box-sizing: border-box;
+		overflow-y: hidden;
 		-ms-overflow-style: none;
 		&::-webkit-scrollbar {
 			display: none !important;
