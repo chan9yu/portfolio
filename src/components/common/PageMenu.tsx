@@ -2,7 +2,12 @@ import React, { FC } from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
-const Container = styled.div<{ intro: boolean }>`
+interface Props {
+	intro: boolean
+	hide: boolean
+}
+
+const Container = styled.div<Props>`
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -23,17 +28,19 @@ const Container = styled.div<{ intro: boolean }>`
 		@media ${({ theme }) => theme.device.mobileL} {
 			width: auto;
 			padding: 5px 10px;
+			display: ${({ hide }) => hide && 'none'};
 		}
 	}
 `
 
 interface Props {
 	intro: boolean
+	hide: boolean
 }
 
-const PageMenu: FC<Props> = ({ intro }) => {
+const PageMenu: FC<Props> = ({ intro, hide }) => {
 	return (
-		<Container intro={intro}>
+		<Container intro={intro} hide={hide}>
 			<button className="page_menus_btn">
 				<Link to="/about">ABOUT</Link>
 			</button>

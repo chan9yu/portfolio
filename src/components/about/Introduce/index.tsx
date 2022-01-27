@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { IntroduceContainer } from './style'
 
 const Introduce = () => {

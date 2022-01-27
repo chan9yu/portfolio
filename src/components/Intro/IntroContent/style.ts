@@ -18,7 +18,7 @@ export const IntroContentContainer = styled.div`
 		padding-bottom: 50px;
 	}
 	@media ${({ theme }) => theme.device.mobileL} {
-		width: 70%;
+		width: 85%;
 		gap: 30px;
 	}
 	@media ${({ theme }) => theme.device.mobileM} {

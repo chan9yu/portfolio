@@ -1,5 +1,4 @@
 import React, { useMemo } from 'react'
-
 import { TimeLineContainer, TimeLineWrapper } from './style'
 
 const TimeLine = () => {

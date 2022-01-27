@@ -1,5 +1,4 @@
 import React, { useMemo } from 'react'
-
 import { SkillsContainer, SkillWrapper } from './style'
 
 const Skills = () => {

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { AboutFooterContainer } from './style'
 
 const AboutFooter = () => {
