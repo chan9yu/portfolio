@@ -13,7 +13,6 @@ const DefaultStyle = css`
 		font-family: 'Noto Sans KR', sans-serif;
 		font-size: 1em;
 		box-sizing: border-box;
-		overflow-y: hidden;
 		-ms-overflow-style: none;
 		&::-webkit-scrollbar {
 			display: none !important;
@@ -35,7 +34,7 @@ const DefaultStyle = css`
 			color: #fff;
 		}
 	}
-	@font-face {
+	/* @font-face {
 		font-family: 'Noto Sans KR';
 		font-weight: 900;
 		src: url('/fonts/NotoSansKR-Black.otf') format('truetype');
@@ -64,7 +63,7 @@ const DefaultStyle = css`
 		font-family: 'Noto Sans KR';
 		font-weight: 100;
 		src: url('/fonts/NotoSansKR-Thin.otf') format('truetype');
-	}
+	} */
 	@font-face {
 		font-family: 'Product Sans';
 		src: url('/fonts/Product-Sans-Regular.ttf') format('truetype');

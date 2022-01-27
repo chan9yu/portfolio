@@ -3,9 +3,8 @@ import { Link } from 'gatsby'
 import React, { FC } from 'react'
 
 const LogoWrapper = styled.span<{ size: 'bigTitleSize' | 'big' | 'xl' }>`
-	font-family: 'Product Sans';
+	font-family: 'Outfit', sans-serif;
 	font-size: ${({ theme, size }) => theme.fontSizes[size]};
-	font-weight: 100;
 	color: ${({ theme }) => theme.colors.fontColor};
 	cursor: pointer;
 	transition: 0.5s;

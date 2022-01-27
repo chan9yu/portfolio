@@ -24,6 +24,13 @@ module.exports = {
 				cssPropOptimization: true
 			}
 		},
+		{
+			resolve: `gatsby-plugin-google-fonts`,
+			options: {
+				fonts: [`Noto+Sans+KR\:100,300,400,500,700,900`, `Outfit\:500`],
+				display: 'swap'
+			}
+		},
 		`gatsby-plugin-react-helmet`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`
