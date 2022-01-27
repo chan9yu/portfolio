@@ -9,7 +9,7 @@ export const InputContainer = styled.div`
 	display: flex;
 	align-items: center;
 	@media ${({ theme }) => theme.device.mobileL} {
-		height: 30px;
+		height: 40px;
 	}
 	.search__icon {
 		position: absolute;
@@ -17,7 +17,7 @@ export const InputContainer = styled.div`
 		left: 20px;
 		transform: translateY(-50%);
 		@media ${({ theme }) => theme.device.mobileL} {
-			left: 10px;
+			left: 12px;
 		}
 	}
 	.input__text {
@@ -26,7 +26,7 @@ export const InputContainer = styled.div`
 		font-weight: 300;
 		padding: 10px 0 10px 50px;
 		@media ${({ theme }) => theme.device.mobileL} {
-			padding: 10px 0 10px 30px;
+			padding: 10px 0 10px 40px;
 		}
 	}
 	.mic__icon {
@@ -35,7 +35,7 @@ export const InputContainer = styled.div`
 		right: 20px;
 		transform: translateY(-50%);
 		@media ${({ theme }) => theme.device.mobileL} {
-			right: 10px;
+			right: 12px;
 		}
 	}
 `

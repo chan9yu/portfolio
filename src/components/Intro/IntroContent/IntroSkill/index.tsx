@@ -1,38 +1,26 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import { RiAddFill } from 'react-icons/ri'
+import { Link } from 'gatsby'
 
-import { SkillContainer } from './style'
+import skills from 'assets/data/skills'
+import { SkillBox, SkillContainer, SkillTooltip } from './style'
 
 const IntroSkill = () => {
-	const skills = useMemo(
-		() => [
-			{ name: 'HTML5', img: '/fe/html.png' },
-			{ name: 'CSS3', img: '/fe/css.png' },
-			{ name: 'JavaScript', img: '/fe/javascript.png' },
-			{ name: 'TypeScript', img: '/fe/typescript.png' },
-			{ name: 'React', img: '/fe/react.png' },
-			{ name: 'Redux', img: '/fe/redux.png' },
-			{ name: 'Next', img: '/fe/next.png' },
-			{ name: 'Vue', img: '/fe/vue.png' },
-			{ name: 'Nuxt', img: '/fe/nuxt.png' },
-			{ name: '더 보기', img: '' }
-		],
-		[]
-	)
-
 	return (
 		<SkillContainer>
-			{skills.map(skill => (
-				<div className="skill__item" key={skill.name}>
-					<div className="skill__imgbox">
+			{skills.map((skill, index) => (
+				<SkillBox key={skill.name} index={skills.length - index}>
+					<SkillTooltip description={skill.description}>
 						{skill.img ? (
 							<img src={skill.img} alt={skill.name} />
 						) : (
-							<RiAddFill fill="#fff" size={20} />
+							<Link to="/about">
+								<RiAddFill fill="#fff" size={20} />
+							</Link>
 						)}
-					</div>
+					</SkillTooltip>
 					<span className="skill__name">{skill.name}</span>
-				</div>
+				</SkillBox>
 			))}
 		</SkillContainer>
 	)
