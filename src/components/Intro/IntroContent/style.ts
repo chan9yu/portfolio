@@ -15,11 +15,12 @@ export const IntroContentContainer = styled.div`
 	@media ${({ theme }) => theme.device.tabletL} {
 		width: 60%;
 		gap: 40px;
-		padding-bottom: 0;
+		padding-bottom: 50px;
 	}
 	@media ${({ theme }) => theme.device.mobileL} {
 		width: 70%;
 		gap: 30px;
+		padding-bottom: 0;
 	}
 	@media ${({ theme }) => theme.device.mobileM} {
 		width: 90%;

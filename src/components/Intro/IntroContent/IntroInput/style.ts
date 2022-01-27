@@ -13,8 +13,9 @@ export const InputContainer = styled.div`
 	}
 	.search__icon {
 		position: absolute;
-		top: 15px;
+		top: 50%;
 		left: 20px;
+		transform: translateY(-50%);
 		@media ${({ theme }) => theme.device.mobileL} {
 			left: 10px;
 			top: 8px;
@@ -31,8 +32,9 @@ export const InputContainer = styled.div`
 	}
 	.mic__icon {
 		position: absolute;
-		top: 15px;
+		top: 50%;
 		right: 20px;
+		transform: translateY(-50%);
 		@media ${({ theme }) => theme.device.mobileL} {
 			right: 10px;
 			top: 8px;
