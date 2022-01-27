@@ -38,16 +38,16 @@ const IntroHeader = () => {
 		<>
 			<HeaderWarpper>
 				<Logo size="xl" />
-				{!isMobile ? (
-					<>
-						<PageMenu intro />
-						{aboutMenu}
-					</>
-				) : (
+				{isMobile ? (
 					<MenuBtn
 						className={isMenu ? 'active' : null}
 						onClick={onClickToggleIsMenu}
 					/>
+				) : (
+					<>
+						<PageMenu intro />
+						{aboutMenu}
+					</>
 				)}
 			</HeaderWarpper>
 			<MobileMenu className={isMenu ? 'active' : null}>

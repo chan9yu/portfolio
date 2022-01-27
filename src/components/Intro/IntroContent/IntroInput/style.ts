@@ -18,7 +18,6 @@ export const InputContainer = styled.div`
 		transform: translateY(-50%);
 		@media ${({ theme }) => theme.device.mobileL} {
 			left: 10px;
-			top: 8px;
 		}
 	}
 	.input__text {
@@ -37,7 +36,6 @@ export const InputContainer = styled.div`
 		transform: translateY(-50%);
 		@media ${({ theme }) => theme.device.mobileL} {
 			right: 10px;
-			top: 8px;
 		}
 	}
 `
