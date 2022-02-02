@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { SkillsContainer, SkillWrapper } from './style'
+import { SkillItem, SkillsContainer, SkillWrapper } from './style'
 
 const Skills = () => {
 	const frontEndItems = useMemo(
@@ -41,11 +41,11 @@ const Skills = () => {
 			<SkillWrapper>
 				<span>Front-End</span>
 				<div className="skill__box">
-					{frontEndItems.map(item => (
-						<div key={item.name} className="skill__item">
+					{frontEndItems.map((item, index) => (
+						<SkillItem key={item.name} index={index}>
 							<img src={item.img} alt={item.name} />
 							<span>{item.name}</span>
-						</div>
+						</SkillItem>
 					))}
 				</div>
 			</SkillWrapper>
@@ -53,10 +53,10 @@ const Skills = () => {
 				<span>Back-End</span>
 				<div className="skill__box">
 					{backEndItems.map(item => (
-						<div key={item.name} className="skill__item">
+						<SkillItem key={item.name}>
 							<img src={item.img} alt={item.name} />
 							<span>{item.name}</span>
-						</div>
+						</SkillItem>
 					))}
 				</div>
 			</SkillWrapper>

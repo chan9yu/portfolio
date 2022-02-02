@@ -4,7 +4,6 @@ import styled from '@emotion/styled'
 import RootWrapper from 'components/common/RootWrapper'
 import Header from 'components/common/Header'
 import Footer from 'components/common/Footer'
-import ProfileCard from 'components/common/ProfileCard'
 
 const Container = styled.div`
 	padding-top: 130px;
@@ -18,9 +17,6 @@ const Container = styled.div`
 		.main_content {
 			width: 65%;
 		}
-		.profile_card {
-			width: 35%;
-		}
 	}
 `
 
@@ -31,9 +27,6 @@ const AppLayout: FC = ({ children }) => {
 				<Header />
 				<div className="content_box">
 					<div className="main_content">{children}</div>
-					<div className="profile_card">
-						<ProfileCard />
-					</div>
 				</div>
 				<Footer />
 			</Container>

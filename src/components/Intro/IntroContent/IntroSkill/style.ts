@@ -81,12 +81,11 @@ export const SkillTooltip = styled.div<{ description: string }>`
 		@media ${({ theme }) => theme.device.mobileL} {
 			width: 135px;
 			padding: 8px 12px;
-			font-size: 10px;
+			font-size: 12px;
 		}
 		@media ${({ theme }) => theme.device.mobileL} {
 			width: 100px;
 			padding: 7px 11px;
-			font-size: 9px;
 		}
 		@media ${({ theme }) => theme.device.mobileS} {
 			width: 80px;

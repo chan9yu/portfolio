@@ -42,27 +42,47 @@ export const SkillWrapper = styled.div`
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
 		gap: 30px;
-		.skill__item {
-			width: 157px;
-			height: 157px;
-			border-radius: 10px;
-			border: 1px solid ${({ theme }) => theme.colors.gray};
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			gap: 10px;
-			cursor: pointer;
+	}
+`
+
+export const SkillItem = styled.div<{ index: number }>`
+	width: 157px;
+	height: 157px;
+	border-radius: 10px;
+	border: 1px solid ${({ theme }) => theme.colors.gray};
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	transition: 0.5s;
+	position: relative;
+	> img {
+		width: 42%;
+	}
+	> span {
+		color: ${({ theme }) => theme.colors.fontColor};
+	}
+	&::before {
+		content: 'test';
+		background-color: #000000b2;
+		color: ${({ theme }) => theme.colors.fontColor};
+		opacity: 0;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 20px;
+	}
+	&:hover {
+		border: 1px solid ${({ theme }) => theme.colors.primary};
+		&::before {
+			opacity: 1;
 			transition: 0.5s;
-			> img {
-				width: 42%;
-			}
-			> span {
-				color: ${({ theme }) => theme.colors.fontColor};
-			}
-			&:hover {
-				border: 1px solid ${({ theme }) => theme.colors.primary};
-			}
 		}
 	}
 `
