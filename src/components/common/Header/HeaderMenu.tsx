@@ -7,7 +7,7 @@ const Container = styled.div`
 	display: flex;
 	gap: 20px;
 	.header__menu_item {
-		color: ${({ theme }) => theme.colors.gray};
+		color: var(--gray);
 		font-size: ${({ theme }) => theme.fontSizes.base};
 		cursor: pointer;
 		transition: 0.5s;
@@ -15,7 +15,7 @@ const Container = styled.div`
 			filter: brightness(70%);
 		}
 		&:first-of-type {
-			color: ${({ theme }) => theme.colors.primary};
+			color: var(--primary);
 		}
 	}
 `

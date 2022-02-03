@@ -6,7 +6,7 @@ export const HeaderWrapper = styled.header`
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-	border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
+	border-bottom: 1px solid var(--gray);
 	background-color: ${({ theme }) => theme.colors.bgColor};
 	position: fixed;
 	top: 0;

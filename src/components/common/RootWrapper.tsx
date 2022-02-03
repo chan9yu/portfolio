@@ -4,6 +4,7 @@ import { ThemeProvider } from '@emotion/react'
 
 import theme from 'styles/theme'
 import GlobalStyle from 'styles/GlobalStyle'
+import ThemeToggleBtn from './ThemeToggleBtn'
 
 const RootWrapper: FC = ({ children }) => {
 	const title = `Changyu's Portfolio`
@@ -37,6 +38,7 @@ const RootWrapper: FC = ({ children }) => {
 			<ThemeProvider theme={theme}>
 				<GlobalStyle />
 				{children}
+				<ThemeToggleBtn />
 			</ThemeProvider>
 		</>
 	)

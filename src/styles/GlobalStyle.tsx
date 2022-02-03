@@ -31,39 +31,29 @@ const DefaultStyle = css`
 		}
 		a {
 			text-decoration: none;
-			color: #fff;
+		}
+		* {
+			color: var(--text);
 		}
 	}
-	/* @font-face {
-		font-family: 'Noto Sans KR';
-		font-weight: 900;
-		src: url('/fonts/NotoSansKR-Black.otf') format('truetype');
+	body {
+		--bg_color_page1: #fff;
+		--bg_color_page2: #fff;
+		--text: #333;
+		--gray: #707070;
+		--hr: #e3e4e8;
+		--primary: #d35400;
 	}
-	@font-face {
-		font-family: 'Noto Sans KR';
-		font-weight: 700;
-		src: url('/fonts/NotoSansKR-Bold.otf') format('truetype');
+
+	body.dark {
+		-webkit-font-smoothing: antialiased;
+		--bg_color_page1: #35363a;
+		--bg_color_page2: #202124;
+		--text: #eee;
+		--gray: #707070;
+		--hr: #707070;
+		--primary: #d35400;
 	}
-	@font-face {
-		font-family: 'Noto Sans KR';
-		font-weight: 500;
-		src: url('/fonts/NotoSansKR-Medium.otf') format('truetype');
-	}
-	@font-face {
-		font-family: 'Noto Sans KR';
-		font-weight: 400;
-		src: url('/fonts/NotoSansKR-Regular.otf') format('truetype');
-	}
-	@font-face {
-		font-family: 'Noto Sans KR';
-		font-weight: 300;
-		src: url('/fonts/NotoSansKR-Light.otf') format('truetype');
-	}
-	@font-face {
-		font-family: 'Noto Sans KR';
-		font-weight: 100;
-		src: url('/fonts/NotoSansKR-Thin.otf') format('truetype');
-	} */
 	@font-face {
 		font-family: 'Product Sans';
 		src: url('/fonts/Product-Sans-Regular.ttf') format('truetype');

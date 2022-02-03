@@ -14,7 +14,7 @@ export const IntroduceContainer = styled.div`
 		}
 		> hr {
 			width: 115px;
-			border: 1px solid ${({ theme }) => theme.colors.primary};
+			border: 1px solid var(--primary);
 			margin: 5px 0 0 0;
 		}
 	}
@@ -23,7 +23,7 @@ export const IntroduceContainer = styled.div`
 		color: ${({ theme }) => theme.colors.fontColor};
 		> span {
 			font-weight: 800;
-			color: ${({ theme }) => theme.colors.primary};
+			color: var(--primary);
 		}
 	}
 	.introducen__content {
@@ -32,7 +32,7 @@ export const IntroduceContainer = styled.div`
 		gap: 30px;
 		color: ${({ theme }) => theme.colors.fontColor};
 		.color_primary {
-			color: ${({ theme }) => theme.colors.primary};
+			color: var(--primary);
 		}
 	}
 `

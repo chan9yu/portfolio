@@ -9,7 +9,7 @@ const LogoWrapper = styled.span<{ size: 'bigTitleSize' | 'big' | 'xl' }>`
 	cursor: pointer;
 	transition: 0.5s;
 	.logo {
-		color: ${({ theme }) => theme.colors.primary};
+		color: var(--primary);
 	}
 	&:hover {
 		filter: brightness(70%);

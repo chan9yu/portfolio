@@ -17,14 +17,14 @@ export const SkillsContainer = styled.div`
 				color: ${({ theme }) => theme.colors.fontColor};
 			}
 			> span {
-				color: ${({ theme }) => theme.colors.primary};
+				color: var(--primary);
 				font-size: ${({ theme }) => theme.fontSizes.small};
 				font-weight: 100;
 			}
 		}
 		> hr {
 			width: 65px;
-			border: 1px solid ${({ theme }) => theme.colors.primary};
+			border: 1px solid var(--primary);
 			margin: 5px 0 0 0;
 		}
 	}
@@ -49,7 +49,7 @@ export const SkillItem = styled.div<{ index: number }>`
 	width: 157px;
 	height: 157px;
 	border-radius: 10px;
-	border: 1px solid ${({ theme }) => theme.colors.gray};
+	border: 1px solid var(--gray);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -79,7 +79,7 @@ export const SkillItem = styled.div<{ index: number }>`
 		font-size: 20px;
 	}
 	&:hover {
-		border: 1px solid ${({ theme }) => theme.colors.primary};
+		border: 1px solid var(--primary);
 		&::before {
 			opacity: 1;
 			transition: 0.5s;

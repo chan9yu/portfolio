@@ -6,8 +6,8 @@ export const HeaderWarpper = styled.header`
 	align-items: center;
 	padding: 10px 50px;
 	box-sizing: border-box;
-	border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
-	background-color: ${({ theme }) => theme.colors.introBgColor};
+	border-bottom: 2px solid var(--hr);
+	background-color: transparent;
 	position: relative;
 	z-index: 10;
 	@media ${({ theme }) => theme.device.tabletL} {
@@ -31,30 +31,30 @@ export const MenuBtn = styled.div`
 		position: absolute;
 		width: 20px;
 		height: 2px;
-		background-color: ${({ theme }) => theme.colors.gray};
+		background-color: var(--gray);
 		transition: 0.2s;
 		transform: translateY(-6px);
-		box-shadow: 0 6px 0 ${({ theme }) => theme.colors.gray};
+		box-shadow: 0 6px 0 var(--gray);
 	}
 	&::after {
 		content: '';
 		position: absolute;
 		width: 20px;
 		height: 2px;
-		background-color: ${({ theme }) => theme.colors.gray};
+		background-color: var(--gray);
 		transition: 0.2s;
 		transform: translateY(6px);
 	}
 	&.active {
 		&::before {
 			content: '';
-			background-color: ${({ theme }) => theme.colors.primary};
-			box-shadow: 0 0px 0 ${({ theme }) => theme.colors.primary};
+			background-color: var(--primary);
+			box-shadow: 0 0px 0 var(--primary);
 			transform: translateY(0) rotate(45deg);
 		}
 		&::after {
 			content: '';
-			background-color: ${({ theme }) => theme.colors.primary};
+			background-color: var(--primary);
 			transform: translateY(0) rotate(-45deg);
 		}
 	}
@@ -73,7 +73,7 @@ export const MobileMenu = styled.div`
 	padding: 10px 30px;
 	width: 100%;
 	box-sizing: border-box;
-	border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
+	border-bottom: 1px solid var(--hr);
 	&.active {
 		opacity: 1;
 		transform: translateY(0px);

@@ -5,7 +5,7 @@ import Logo from './Logo'
 
 const Container = styled.footer`
 	padding: 15px 0;
-	border-top: 1px solid ${({ theme }) => theme.colors.gray};
+	border-top: 1px solid var(--gray);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -13,7 +13,7 @@ const Container = styled.footer`
 	gap: 5px;
 	.footer__copyright {
 		font-size: ${({ theme }) => theme.fontSizes.base};
-		color: ${({ theme }) => theme.colors.gray};
+		color: var(--gray);
 	}
 	@media ${({ theme }) => theme.device.mobileL} {
 		padding: 10px 0;

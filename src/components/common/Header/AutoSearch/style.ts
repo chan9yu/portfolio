@@ -20,7 +20,7 @@ export const SearchWrapper = styled.div`
 		gap: 15px;
 		padding: 10px 0;
 		.search__vertical_line {
-			border: 1px solid ${({ theme }) => theme.colors.gray};
+			border: 1px solid var(--gray);
 			height: 28px;
 		}
 	}

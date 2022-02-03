@@ -14,7 +14,7 @@ export const AboutFooterContainer = styled.div`
 		}
 		> hr {
 			width: 65px;
-			border: 1px solid ${({ theme }) => theme.colors.primary};
+			border: 1px solid var(--primary);
 			margin: 5px 0 0 0;
 		}
 	}
@@ -23,7 +23,7 @@ export const AboutFooterContainer = styled.div`
 		font-size: ${({ theme }) => theme.fontSizes.xl};
 		line-height: 1.6;
 		.primary {
-			color: ${({ theme }) => theme.colors.primary};
+			color: var(--primary);
 		}
 	}
 `

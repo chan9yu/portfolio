@@ -16,7 +16,7 @@ const Container = styled.div`
 
 const Divide = styled.hr`
 	width: 100%;
-	border: 1px solid ${({ theme }) => theme.colors.gray};
+	border: 1px solid var(--gray);
 `
 
 const AboutPage = () => {

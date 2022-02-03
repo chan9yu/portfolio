@@ -14,14 +14,14 @@ export const TimeLineContainer = styled.div`
 				color: ${({ theme }) => theme.colors.fontColor};
 			}
 			> span {
-				color: ${({ theme }) => theme.colors.primary};
+				color: var(--primary);
 				font-size: ${({ theme }) => theme.fontSizes.small};
 				font-weight: 100;
 			}
 		}
 		> hr {
 			width: 65px;
-			border: 1px solid ${({ theme }) => theme.colors.primary};
+			border: 1px solid var(--primary);
 			margin: 5px 0 0 0;
 		}
 	}
@@ -43,7 +43,7 @@ export const TimeLineWrapper = styled.div`
 			gap: 30px;
 			.timeline__item_date {
 				width: 18.45%;
-				color: ${({ theme }) => theme.colors.gray};
+				color: var(--gray);
 			}
 			.timeline__item_sub_title {
 				width: 78.23%;
