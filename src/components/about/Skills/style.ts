@@ -14,7 +14,6 @@ export const SkillsContainer = styled.div`
 			> h2 {
 				font-size: ${({ theme }) => theme.fontSizes.xxxl};
 				font-weight: 600;
-				color: ${({ theme }) => theme.colors.fontColor};
 			}
 			> span {
 				color: var(--primary);
@@ -35,7 +34,6 @@ export const SkillWrapper = styled.div`
 	flex-direction: column;
 	gap: 10px;
 	> span {
-		color: ${({ theme }) => theme.colors.fontColor};
 		font-size: ${({ theme }) => theme.fontSizes.base};
 	}
 	.skill__box {
@@ -56,18 +54,17 @@ export const SkillItem = styled.div<{ index: number }>`
 	align-items: center;
 	gap: 10px;
 	cursor: pointer;
-	transition: 0.5s;
+	transition: 0.3s;
 	position: relative;
 	> img {
 		width: 42%;
 	}
 	> span {
-		color: ${({ theme }) => theme.colors.fontColor};
 	}
 	&::before {
 		content: 'test';
 		background-color: #000000b2;
-		color: ${({ theme }) => theme.colors.fontColor};
+
 		opacity: 0;
 		position: absolute;
 		width: 100%;
@@ -82,7 +79,7 @@ export const SkillItem = styled.div<{ index: number }>`
 		border: 1px solid var(--primary);
 		&::before {
 			opacity: 1;
-			transition: 0.5s;
+			transition: 0.3s;
 		}
 	}
 `

@@ -22,7 +22,7 @@ export const InputContainer = styled.div`
 	}
 	.input__text {
 		font-size: ${({ theme }) => theme.fontSizes.xl};
-		color: ${({ theme }) => theme.colors.fontColor};
+
 		font-weight: 300;
 		padding: 10px 0 10px 50px;
 		@media ${({ theme }) => theme.device.mobileL} {

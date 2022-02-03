@@ -11,7 +11,6 @@ export const TimeLineContainer = styled.div`
 			> h2 {
 				font-size: ${({ theme }) => theme.fontSizes.xxxl};
 				font-weight: 600;
-				color: ${({ theme }) => theme.colors.fontColor};
 			}
 			> span {
 				color: var(--primary);
@@ -32,7 +31,7 @@ export const TimeLineWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 60px;
-	color: ${({ theme }) => theme.colors.fontColor};
+
 	font-size: ${({ theme }) => theme.fontSizes.xl};
 	.timeline__item_box {
 		display: flex;

@@ -10,7 +10,7 @@ const Container = styled.div`
 		color: var(--gray);
 		font-size: ${({ theme }) => theme.fontSizes.base};
 		cursor: pointer;
-		transition: 0.5s;
+		transition: 0.3s;
 		&:hover {
 			filter: brightness(70%);
 		}

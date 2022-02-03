@@ -38,9 +38,16 @@ const DefaultStyle = css`
 	}
 	body {
 		--bg_color_page1: #fff;
-		--bg_color_page2: #fff;
+		--bg_color_page2: #eee;
+		--logo_color_1: #4285f4;
+		--logo_color_2: #ea4335;
+		--logo_color_3: #fbbc05;
+		--logo_color_4: #4285f4;
+		--logo_color_5: #34a853;
+		--logo_color_6: #ea4335;
+		--logo_color_7: #fbbc05;
 		--text: #333;
-		--gray: #707070;
+		--gray: #a0a0a0;
 		--hr: #e3e4e8;
 		--primary: #d35400;
 	}
@@ -49,6 +56,13 @@ const DefaultStyle = css`
 		-webkit-font-smoothing: antialiased;
 		--bg_color_page1: #35363a;
 		--bg_color_page2: #202124;
+		--logo_color_1: #d35400;
+		--logo_color_2: #da552f;
+		--logo_color_3: #ff6600;
+		--logo_color_4: #d35400;
+		--logo_color_5: #fff;
+		--logo_color_6: #fff;
+		--logo_color_7: #fff;
 		--text: #eee;
 		--gray: #707070;
 		--hr: #707070;

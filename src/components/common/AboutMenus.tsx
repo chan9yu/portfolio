@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import { useMediaQuery } from 'react-responsive'
 import { FaGithub, FaBlog } from 'react-icons/fa'
 import styled from '@emotion/styled'
 
@@ -27,35 +26,63 @@ export const Container = styled.div<Props>`
 		width: 34px;
 		height: 34px;
 		border-radius: 50%;
+		cursor: pointer;
+		transition: 0.5s;
+		&:hover {
+			filter: brightness(70%);
+		}
 		@media ${({ theme }) => theme.device.tabletL} {
 			width: 25px;
 			height: 25px;
 		}
 	}
-	& > * {
-		transition: 0.5s;
-		cursor: pointer;
-		&:hover {
-			filter: brightness(70%);
-		}
+`
+
+const BlogIcon = styled(FaBlog)`
+	fill: var(--text);
+	width: 25px;
+	height: 25px;
+	transition: 0.3s;
+	cursor: pointer;
+	transition: 0.5s;
+	&:hover {
+		filter: brightness(70%);
+	}
+	@media ${({ theme }) => theme.device.tabletL} {
+		width: 20px;
+		height: 20px;
+	}
+`
+
+const GithubIcon = styled(FaGithub)`
+	fill: var(--text);
+	width: 25px;
+	height: 25px;
+	transition: 0.3s;
+	cursor: pointer;
+	transition: 0.5s;
+	&:hover {
+		filter: brightness(70%);
+	}
+	@media ${({ theme }) => theme.device.tabletL} {
+		width: 20px;
+		height: 20px;
 	}
 `
 
 const AboutMenus: FC<Props> = ({ hide }) => {
-	const isTable = useMediaQuery({ query: '(max-width: 1024px)' })
-
 	const PROFILE_IMG =
 		'https://avatars.githubusercontent.com/u/80776262?v=4' as const
 
 	return (
 		<Container hide={hide}>
-			<FaBlog fill="#ddd" size={isTable ? 20 : 25} />
+			<BlogIcon />
 			<a
 				href="https://github.com/changyuyeo"
 				target="_blank"
 				rel="noreferrer noopener"
 			>
-				<FaGithub fill="#ddd" size={isTable ? 20 : 25} />
+				<GithubIcon />
 			</a>
 			<img className="about_menus_img" src={PROFILE_IMG} alt="profile_img" />
 		</Container>

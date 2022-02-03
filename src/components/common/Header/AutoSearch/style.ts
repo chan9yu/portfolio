@@ -11,7 +11,6 @@ export const SearchWrapper = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	> span {
-		color: ${({ theme }) => theme.colors.fontColor};
 		font-size: ${({ theme }) => theme.fontSizes.base};
 	}
 	.search__icons {

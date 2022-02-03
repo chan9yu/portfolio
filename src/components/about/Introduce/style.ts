@@ -10,7 +10,6 @@ export const IntroduceContainer = styled.div`
 		> h2 {
 			font-size: ${({ theme }) => theme.fontSizes.xxxl};
 			font-weight: 600;
-			color: ${({ theme }) => theme.colors.fontColor};
 		}
 		> hr {
 			width: 115px;
@@ -20,7 +19,7 @@ export const IntroduceContainer = styled.div`
 	}
 	.introducen__title {
 		font-size: ${({ theme }) => theme.fontSizes.titleSize};
-		color: ${({ theme }) => theme.colors.fontColor};
+
 		> span {
 			font-weight: 800;
 			color: var(--primary);
@@ -30,7 +29,7 @@ export const IntroduceContainer = styled.div`
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
-		color: ${({ theme }) => theme.colors.fontColor};
+
 		.color_primary {
 			color: var(--primary);
 		}

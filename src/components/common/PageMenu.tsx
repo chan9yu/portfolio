@@ -16,14 +16,16 @@ const Container = styled.div<Props>`
 		padding: 5px 0;
 		border-radius: 5px;
 		font-size: ${({ theme }) => theme.fontSizes.base};
-		color: ${({ theme }) => theme.colors.fontColor};
 		font-weight: 100;
 		font-family: 'Noto Sans KR';
-		transition: 0.5s;
+		transition: 0.3s;
 		background-color: transparent;
 		&:hover {
-			background-color: ${({ theme, intro }) =>
-				intro ? theme.colors.bgColor : theme.colors.introBgColor};
+			background-color: var(--gray);
+			color: #eee;
+			a {
+				color: #eee;
+			}
 		}
 		@media ${({ theme }) => theme.device.mobileL} {
 			width: auto;

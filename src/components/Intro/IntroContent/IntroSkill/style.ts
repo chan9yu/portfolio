@@ -19,7 +19,6 @@ export const SkillContainer = styled.div`
 		row-gap: 30px;
 	}
 	.skill__name {
-		color: ${({ theme }) => theme.colors.fontColor};
 		font-size: ${({ theme }) => theme.fontSizes.base};
 		font-weight: 100;
 		@media ${({ theme }) => theme.device.mobileL} {
@@ -33,7 +32,7 @@ export const SkillBox = styled.div<{ index: number }>`
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
-	transition: 0.5s;
+	transition: 0.3s;
 	z-index: ${({ index }) => index};
 	cursor: pointer;
 	&:hover {
@@ -67,7 +66,7 @@ export const SkillTooltip = styled.div<{ description: string }>`
 		position: absolute;
 		top: 40px;
 		background-color: ${({ theme }) => theme.colors.bgColor};
-		color: ${({ theme }) => theme.colors.fontColor};
+
 		width: 200px;
 		padding: 10px 15px;
 		line-height: 1.6;

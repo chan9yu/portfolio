@@ -10,7 +10,6 @@ export const AboutFooterContainer = styled.div`
 		> h2 {
 			font-size: ${({ theme }) => theme.fontSizes.xxxl};
 			font-weight: 600;
-			color: ${({ theme }) => theme.colors.fontColor};
 		}
 		> hr {
 			width: 65px;
@@ -19,7 +18,6 @@ export const AboutFooterContainer = styled.div`
 		}
 	}
 	.footer__text {
-		color: ${({ theme }) => theme.colors.fontColor};
 		font-size: ${({ theme }) => theme.fontSizes.xl};
 		line-height: 1.6;
 		.primary {
