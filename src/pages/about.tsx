@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from '@emotion/styled'
 
 import AppLayout from 'components/layout/AppLayout'
@@ -16,7 +15,7 @@ const Container = styled.div`
 
 const Divide = styled.hr`
 	width: 100%;
-	border: 1px solid var(--gray);
+	border: 1px solid var(--hr);
 `
 
 const AboutPage = () => {

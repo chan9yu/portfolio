@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 
 export const SkillsContainer = styled.div`
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -43,7 +44,7 @@ export const SkillWrapper = styled.div`
 	}
 `
 
-export const SkillItem = styled.div<{ index: number }>`
+export const SkillItem = styled.div`
 	width: 157px;
 	height: 157px;
 	border-radius: 10px;

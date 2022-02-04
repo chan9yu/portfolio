@@ -41,8 +41,8 @@ const Skills = () => {
 			<SkillWrapper>
 				<span>Front-End</span>
 				<div className="skill__box">
-					{frontEndItems.map((item, index) => (
-						<SkillItem key={item.name} index={index}>
+					{frontEndItems.map(item => (
+						<SkillItem key={item.name}>
 							<img src={item.img} alt={item.name} />
 							<span>{item.name}</span>
 						</SkillItem>

@@ -26,7 +26,7 @@ const AutoSearch = () => {
 			clearInterval(interval.current)
 			clearText()
 		}
-		return () => clearInterval(interval.current)
+		return () => clearInterval(interval.current as NodeJS.Timeout)
 	}, [count])
 
 	return (

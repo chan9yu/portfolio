@@ -48,8 +48,8 @@ const DefaultStyle = css`
 		--logo_color_7: #fbbc05;
 		--text: #333;
 		--gray: #a0a0a0;
-		--hr: #e3e4e8;
-		--primary: #d35400;
+		--hr: #d7d8db;
+		--primary: #ff6701;
 	}
 
 	body.dark {

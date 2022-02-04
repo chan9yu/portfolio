@@ -30,6 +30,7 @@
     "@types/react-helmet": "^6.1.5",
     "@types/react-responsive": "^8.0.5",
     "emotion-reset": "^3.0.1",
+    "framer-motion": "^6.2.3",
     "gatsby": "^4.5.2",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-emotion": "^7.5.0",

@@ -6,8 +6,9 @@ export const HeaderWrapper = styled.header`
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-	border-bottom: 1px solid var(--gray);
-	background-color: ${({ theme }) => theme.colors.bgColor};
+	border-bottom: 2px solid var(--hr);
+	background-color: var(--bg_color_page2);
+	transition: color 0.2s ease-out, background-color 0.2s ease-out;
 	position: fixed;
 	top: 0;
 	left: 0;

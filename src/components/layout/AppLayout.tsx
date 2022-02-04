@@ -7,9 +7,10 @@ import Footer from 'components/common/Footer'
 
 const Container = styled.div`
 	padding-top: 130px;
-	background-color: ${({ theme }) => theme.colors.bgColor};
+	background-color: var(--bg_color_page2);
+	transition: color 0.2s ease-out, background-color 0.2s ease-out;
 	.content_box {
-		width: 79.1%;
+		width: 80%;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;

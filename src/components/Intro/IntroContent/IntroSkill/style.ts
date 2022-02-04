@@ -1,6 +1,8 @@
 import styled from '@emotion/styled'
+import { motion } from 'framer-motion'
+import { RiAddFill } from 'react-icons/ri'
 
-export const SkillContainer = styled.div`
+export const SkillContainer = styled(motion.div)`
 	width: 80%;
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -27,7 +29,7 @@ export const SkillContainer = styled.div`
 	}
 `
 
-export const SkillBox = styled.div<{ index: number }>`
+export const SkillBox = styled(motion.div)<{ index: number }>`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -36,7 +38,7 @@ export const SkillBox = styled.div<{ index: number }>`
 	z-index: ${({ index }) => index};
 	cursor: pointer;
 	&:hover {
-		filter: brightness(70%);
+		filter: brightness(90%);
 	}
 	@media ${({ theme }) => theme.device.mobileL} {
 		gap: 5px;
@@ -47,7 +49,7 @@ export const SkillTooltip = styled.div<{ description: string }>`
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	background-color: ${({ theme }) => theme.colors.bgColor};
+	background-color: var(--bg_color_page2);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -65,8 +67,7 @@ export const SkillTooltip = styled.div<{ description: string }>`
 		content: '${({ description }) => description}';
 		position: absolute;
 		top: 40px;
-		background-color: ${({ theme }) => theme.colors.bgColor};
-
+		background-color: var(--bg_color_page2);
 		width: 200px;
 		padding: 10px 15px;
 		line-height: 1.6;
@@ -99,4 +100,8 @@ export const SkillTooltip = styled.div<{ description: string }>`
 			}
 		}
 	}
+`
+
+export const AddIcon = styled(RiAddFill)`
+	fill: var(--text);
 `

@@ -16,7 +16,7 @@ const Container = styled.div<Props>`
 		padding: 5px 0;
 		border-radius: 5px;
 		font-size: ${({ theme }) => theme.fontSizes.base};
-		font-weight: 100;
+		font-weight: 400;
 		font-family: 'Noto Sans KR';
 		transition: 0.3s;
 		background-color: transparent;
