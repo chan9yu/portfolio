@@ -48,6 +48,7 @@ const DefaultStyle = css`
 		--logo_color_7: #fbbc05;
 		--text: #333;
 		--gray: #a0a0a0;
+		--gray_2: #b0b0b022;
 		--hr: #d7d8db;
 		--primary: #ff6701;
 	}
@@ -65,6 +66,7 @@ const DefaultStyle = css`
 		--logo_color_7: #fff;
 		--text: #eee;
 		--gray: #707070;
+		--gray_2: #70707022;
 		--hr: #707070;
 		--primary: #d35400;
 	}

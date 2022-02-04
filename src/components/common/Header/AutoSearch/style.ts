@@ -5,7 +5,7 @@ export const SearchWrapper = styled.div`
 	height: 50px;
 	box-sizing: border-box;
 	background-color: var(--bg_color_page1);
-	box-shadow: inset 0 3px 12px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 	padding: 15px 20px;
 	border-radius: 25px;
 	display: flex;

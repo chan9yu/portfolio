@@ -6,6 +6,8 @@ const Container = styled.div`
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
+	z-index: 10;
+	cursor: pointer;
 `
 
 const ThemeToggleBtn = () => {

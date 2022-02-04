@@ -20,7 +20,7 @@
 		"project": "./tsconfig.json"
 	},
 	"plugins": ["react", "@typescript-eslint"],
-	"ignorePatterns": ["dist/", "node_modules/", "styles/"],
+	"ignorePatterns": ["dist/", "node_modules/", "styles/", "assets/"],
 	"rules": {
 		"@typescript-eslint/no-unsafe-member-access": "off",
 		"@typescript-eslint/no-unsafe-assignment": "off",

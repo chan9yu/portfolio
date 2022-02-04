@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 export const InputContainer = styled.div`
 	width: 100%;
 	height: 50px;
-	border: 1px solid var(--gray);
+	border: 2px solid var(--gray);
 	border-radius: 25px;
 	position: relative;
 	display: flex;
@@ -23,7 +23,7 @@ export const InputContainer = styled.div`
 	.input__text {
 		font-size: ${({ theme }) => theme.fontSizes.xl};
 
-		font-weight: 300;
+		font-weight: 500;
 		padding: 10px 0 10px 50px;
 		@media ${({ theme }) => theme.device.mobileL} {
 			padding: 10px 0 10px 40px;

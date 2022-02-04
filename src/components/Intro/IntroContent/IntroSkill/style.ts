@@ -22,7 +22,7 @@ export const SkillContainer = styled(motion.div)`
 	}
 	.skill__name {
 		font-size: ${({ theme }) => theme.fontSizes.base};
-		font-weight: 100;
+		font-weight: 400;
 		@media ${({ theme }) => theme.device.mobileL} {
 			font-size: 12px;
 		}

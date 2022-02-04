@@ -1,66 +1,77 @@
-import React, { useMemo } from 'react'
-import { SkillItem, SkillsContainer, SkillWrapper } from './style'
+import React, { useCallback, useState } from 'react'
+import { AnimatePresence } from 'framer-motion'
+
+import { frontEndItems, backEndItems } from 'assets/data/about/skillItems'
+import { Item, Container, Wrapper, Grid, Overlay, ActiveItem } from './style'
 
 const Skills = () => {
-	const frontEndItems = useMemo(
-		() => [
-			{ name: 'HTML5', img: '/fe/html.png' },
-			{ name: 'CSS3', img: '/fe/css.png' },
-			{ name: 'JavaScript', img: '/fe/javascript.png' },
-			{ name: 'Typescript', img: '/fe/typescript.png' },
-			{ name: 'React', img: '/fe/react.png' },
-			{ name: 'Redux', img: '/fe/redux.png' },
-			{ name: 'Next', img: '/fe/next.png' },
-			{ name: 'Vue', img: '/fe/vue.png' },
-			{ name: 'Nuxt', img: '/fe/nuxt.png' }
-		],
+	const [id, setId] = useState<string | null>(null)
+
+	const onOpen = useCallback(
+		(boxId: string) => () => {
+			setId(boxId)
+		},
 		[]
 	)
 
-	const backEndItems = useMemo(
-		() => [
-			{ name: 'NodeJs', img: '/be/nodejs.png' },
-			{ name: 'Express', img: '/be/express.png' },
-			{ name: 'MongoDB', img: '/be/mongodb.png' },
-			{ name: 'Mongoose', img: '/be/mongoose.png' },
-			{ name: 'MySQL', img: '/be/mysql.png' },
-			{ name: 'Sequelize', img: '/be/sequelize.png' }
-		],
+	const onClose = useCallback(() => setId(null), [])
+
+	const feItemCurrentIndex = useCallback(
+		(name: string) => frontEndItems.findIndex(item => item.name === name),
 		[]
 	)
 
 	return (
-		<SkillsContainer>
+		<Container>
 			<div className="skill__header">
 				<div className="skill__header_title">
 					<h2>SKILLS</h2>
-					<span>마우스를 갖다 대면 자세히 볼 수 있어요!</span>
+					<span>아이템을 클릭하면 자세히 볼 수 있어요!</span>
 				</div>
 				<hr />
 			</div>
-			<SkillWrapper>
+			<Wrapper>
 				<span>Front-End</span>
-				<div className="skill__box">
+				<Grid>
 					{frontEndItems.map(item => (
-						<SkillItem key={item.name}>
+						<Item
+							key={item.name}
+							layoutId={item.name}
+							onClick={onOpen(item.name)}
+						>
 							<img src={item.img} alt={item.name} />
-							<span>{item.name}</span>
-						</SkillItem>
+							<span className="skill__name">{item.name}</span>
+						</Item>
 					))}
-				</div>
-			</SkillWrapper>
-			<SkillWrapper>
-				<span>Back-End</span>
-				<div className="skill__box">
-					{backEndItems.map(item => (
-						<SkillItem key={item.name}>
-							<img src={item.img} alt={item.name} />
-							<span>{item.name}</span>
-						</SkillItem>
-					))}
-				</div>
-			</SkillWrapper>
-		</SkillsContainer>
+				</Grid>
+				<AnimatePresence>
+					{id && (
+						<Overlay
+							initial={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}
+							animate={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+							exit={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}
+							onClick={onClose}
+						>
+							<ActiveItem layoutId={id}>
+								<div className="acive_header">
+									<img
+										src={frontEndItems[feItemCurrentIndex(id)].img}
+										alt={frontEndItems[feItemCurrentIndex(id)].name}
+									/>
+									<span className="acive_title">
+										{frontEndItems[feItemCurrentIndex(id)].name}
+									</span>
+								</div>
+								<div className="active_description">
+									<span>testtesttest</span>
+									<span>testtesttesttest</span>
+								</div>
+							</ActiveItem>
+						</Overlay>
+					)}
+				</AnimatePresence>
+			</Wrapper>
+		</Container>
 	)
 }
 

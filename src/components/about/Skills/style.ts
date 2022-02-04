@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
+import { motion } from 'framer-motion'
 
-export const SkillsContainer = styled.div`
+export const Container = styled.div`
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -30,57 +31,73 @@ export const SkillsContainer = styled.div`
 	}
 `
 
-export const SkillWrapper = styled.div`
+export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	> span {
 		font-size: ${({ theme }) => theme.fontSizes.base};
 	}
-	.skill__box {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		gap: 30px;
-	}
 `
 
-export const SkillItem = styled.div`
-	width: 157px;
-	height: 157px;
+export const Grid = styled.div`
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 25px;
+`
+
+export const Item = styled(motion.div)`
+	width: 100%;
+	height: 200px;
+	background-color: var(--gray_2);
 	border-radius: 10px;
-	border: 1px solid var(--gray);
+	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap: 10px;
-	cursor: pointer;
-	transition: 0.3s;
-	position: relative;
+	gap: 15px;
 	> img {
-		width: 42%;
+		width: 45%;
 	}
-	> span {
+	.skill__name {
+		font-size: ${({ theme }) => theme.fontSizes.lg};
+		font-weight: 500;
 	}
-	&::before {
-		content: 'test';
-		background-color: #000000b2;
+`
 
-		opacity: 0;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		border-radius: 10px;
+export const ActiveItem = styled(Item)`
+	width: 600px;
+	background-color: var(--bg_color_page1);
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 20px;
+	.acive_header {
 		display: flex;
-		justify-content: center;
 		align-items: center;
-		font-size: 20px;
-	}
-	&:hover {
-		border: 1px solid var(--primary);
-		&::before {
-			opacity: 1;
-			transition: 0.3s;
+		gap: 10px;
+		.acive_title {
+			font-size: ${({ theme }) => theme.fontSizes.xl};
 		}
 	}
+	.active_description {
+		display: flex;
+		flex-direction: column;
+		font-size: ${({ theme }) => theme.fontSizes.lg};
+	}
+`
+
+export const Overlay = styled(motion.div)`
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
 `
