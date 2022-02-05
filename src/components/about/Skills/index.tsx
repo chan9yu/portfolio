@@ -63,8 +63,9 @@ const Skills = () => {
 									</span>
 								</div>
 								<div className="active_description">
-									<span>testtesttest</span>
-									<span>testtesttesttest</span>
+									{frontEndItems[feItemCurrentIndex(id)].content.map(v => (
+										<span key={v}>{v}</span>
+									))}
 								</div>
 							</ActiveItem>
 						</Overlay>

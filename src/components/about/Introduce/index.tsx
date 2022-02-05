@@ -84,7 +84,7 @@ const Introduce = () => {
 									{introduction.content.map(content => (
 										<div key={content}>
 											{content.map(v => (
-												<span>{v}</span>
+												<span key={v}>{v}</span>
 											))}
 										</div>
 									))}

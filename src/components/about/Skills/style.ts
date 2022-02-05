@@ -67,7 +67,8 @@ export const Item = styled(motion.div)`
 `
 
 export const ActiveItem = styled(Item)`
-	width: 600px;
+	width: auto;
+	height: auto;
 	background-color: var(--bg_color_page1);
 	justify-content: flex-start;
 	align-items: flex-start;
@@ -76,6 +77,7 @@ export const ActiveItem = styled(Item)`
 		display: flex;
 		align-items: center;
 		gap: 10px;
+		margin-bottom: 10px;
 		.acive_title {
 			font-size: ${({ theme }) => theme.fontSizes.xl};
 		}
@@ -83,6 +85,7 @@ export const ActiveItem = styled(Item)`
 	.active_description {
 		display: flex;
 		flex-direction: column;
+		gap: 10px;
 		font-size: ${({ theme }) => theme.fontSizes.lg};
 	}
 `
