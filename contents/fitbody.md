@@ -1,8 +1,17 @@
 ---
-date: '2020-07-29'
-title: 'Test'
-categories: ['Web', 'SEO', 'Optimization']
-summary: '홈페이지를 운영하는 많은 사람들 또는 기업들이 검색 페이지 최상단에 보여지게 하기 위해 어떤 최적화 작업을 하는지 알아보자.'
+title: 'Fit body',
+type: 'solo',
+skills:
+  {
+    fe: ['vue', 'nuxt', 'javascript', 'sass', 'vuetify'],
+    be: ['node.js', 'express', 'typescript', 'mongoDB', 'mongoose']
+  }
+description:
+  [
+    'Fit body(핏바디)는 다양한 홈트레이닝용 운동기구를 판매하는 쇼핑몰 입니다.',
+    '계속되는 코로나로 인해 헬스장보다는 홈트레이닝을 꾸리는 사람들이 늘어가는 추세이기 떄문에 운동용품을 아이템으로 쇼핑몰 주제로 만들어봤습니다.',
+    '쇼핑몰 프로젝트를 구현하기위해 백엔드 영역을 공부하며 웹 개발에 대해 좀 더 넓게 볼 수 있게 성장한 프로젝트 입니다!'
+  ]
 thumbnail: './fitbody.png'
 ---
 

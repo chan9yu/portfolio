@@ -3,7 +3,12 @@ import styled from '@emotion/styled'
 
 import PortfolioItem from './PortfolioItem'
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+`
 
 export interface ProtfolioType {
 	node: {

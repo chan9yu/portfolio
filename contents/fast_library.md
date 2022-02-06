@@ -1,9 +1,14 @@
 ---
-date: '2020-07-29'
-title: 'Test'
-categories: ['Web', 'SEO', 'Optimization']
-summary: '홈페이지를 운영하는 많은 사람들 또는 기업들이 검색 페이지 최상단에 보여지게 하기 위해 어떤 최적화 작업을 하는지 알아보자.'
-thumbnail: './fast_library.png'
+title: 'Fast Library'
+type: 'solo'
+skills: { fe: ['vue', 'typescript', 'sass', 'bootstrap'], be: [''] }
+description:
+  [
+    '검색 하나로 책에 대한 정보를 빠르게 얻을 수 있는 Fast Library 입니다!',
+    '온라인 vue 스터디에 참여해 사람들끼리 공부를하며 스터디에 최종목표로 처음으로 혼자서 만든 프로젝트입니다.',
+    'vue와 typescript를 사용하였고 카카오 오픈 API을 이용해 만들어졌습니다.'
+  ]
+thumbnail: './bongoose.png'
 ---
 
 # vue_book_app 📚
