@@ -1,3 +1,11 @@
+---
+date: '2020-07-29'
+title: 'Test'
+categories: ['Web', 'SEO', 'Optimization']
+summary: '홈페이지를 운영하는 많은 사람들 또는 기업들이 검색 페이지 최상단에 보여지게 하기 위해 어떤 최적화 작업을 하는지 알아보자.'
+thumbnail: './fitbody.png'
+---
+
 # Fit body 👩‍👦‍👦
 
 `Fit body(핏바디)`는 다양한 홈트레이닝용 운동기구를 판매하는 쇼핑몰 입니다. <br />
@@ -159,7 +167,6 @@
       - 여러 상품을 볼 수 있고  LOAD MORE 버튼으로 더욱 많은 상품을 볼 수 있습니다.
     </td>
   </tr>
-
 
   <tr>
     <td>

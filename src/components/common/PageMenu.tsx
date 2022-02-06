@@ -46,7 +46,9 @@ const PageMenu: FC<Props> = ({ intro, hide }) => {
 			<button className="page_menus_btn">
 				<Link to="/about">ABOUT</Link>
 			</button>
-			<button className="page_menus_btn">PORTFOLIO</button>
+			<button className="page_menus_btn">
+				<Link to="/portfolio">PORTFOLIO</Link>
+			</button>
 		</Container>
 	)
 }
