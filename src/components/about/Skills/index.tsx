@@ -44,7 +44,7 @@ const Skills = () => {
 						</Item>
 					))}
 				</Grid>
-				<AnimatePresence>
+				<AnimatePresence initial={false}>
 					{id && (
 						<Overlay
 							initial={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}
