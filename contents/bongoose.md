@@ -78,7 +78,6 @@ thumbnail: './thumbnail/bongoose.png'
     <td>미리보기</td>
     <td>설명</td>
   </tr>
-  
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/146194480-98fd79d8-8328-4944-aac4-2e5458d7181d.gif width="600">
@@ -89,7 +88,6 @@ thumbnail: './thumbnail/bongoose.png'
       - 봉구스는 회원이 인증된 사람만 이용할 수 있기 때문에 회원가입 후 로그인을 해야 서비스 이용이 가능합니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/146194862-29e31454-b716-47b3-bb69-237105348713.gif width="600">
@@ -100,7 +98,6 @@ thumbnail: './thumbnail/bongoose.png'
       - 최신 글을 빠르게 볼 수 있습니다. <br />
     </td>
   </tr>
-
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/146195809-937ef86e-dd3d-4083-bfb0-3141a78b54b9.gif width="600">
@@ -112,7 +109,6 @@ thumbnail: './thumbnail/bongoose.png'
       - # 를 이용해서 해쉬태그를 작성할 수 있습니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/146197287-e3e983d5-338a-4fa6-b413-efdf8a283eb4.gif width="600">
@@ -123,7 +119,6 @@ thumbnail: './thumbnail/bongoose.png'
       - 글의 내용을 수정할 수 있으며, 원한다면 삭제도 가능합니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/146196469-38ca6990-0e8c-4ded-a87a-02b0e32bd4fa.gif width="600">
@@ -133,7 +128,6 @@ thumbnail: './thumbnail/bongoose.png'
       - 각 게시물마다 댓글을 쓰고, 수정하고 삭제를 할 수 있습니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/146196828-5baa3285-fd2f-4124-928a-34e0390ed6d7.gif width="600">
@@ -144,7 +138,6 @@ thumbnail: './thumbnail/bongoose.png'
       - 다시 취소도 가능하지만, 좋아요와 싫어요는 동시에 사용 불가 합니다. 
     </td>
   </tr>
-
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/146198366-2902049c-6bc9-4370-a4ca-fa6597bba703.gif width="600">
@@ -157,7 +150,6 @@ thumbnail: './thumbnail/bongoose.png'
       - 자신이 작성한 글 목록을 볼 수 있습니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/146198666-85432c53-d6a2-4a70-9e84-e56b6aa52cc2.gif width="600">
@@ -168,7 +160,6 @@ thumbnail: './thumbnail/bongoose.png'
       - 해당 유저의 프로필 보기와 친구 삭제하기가 가능합니다. <br />
     </td>
   </tr>
-
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/146199170-82ff3f01-23cf-407a-a39d-1439b56cd9d3.gif width="600">
@@ -179,7 +170,6 @@ thumbnail: './thumbnail/bongoose.png'
       - 원하는 유저에게 친구추가를 하면 친구가 됩니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/146199756-6eb5caa2-8262-4c4d-afec-1e6fc438f5a3.gif width="600">
@@ -190,7 +180,6 @@ thumbnail: './thumbnail/bongoose.png'
       - 원하는 유저에게 친구추가를 하면 친구가 됩니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/146200346-850358d3-d7aa-4a16-ab94-291a32e9b982.gif width="600">

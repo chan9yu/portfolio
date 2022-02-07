@@ -34,6 +34,8 @@ const RootWrapper: FC = ({ children }) => {
 				<meta name="twitter:image" content={image} />
 				<meta name="twitter:site" content="@사용자이름" />
 				<meta name="twitter:creator" content="@사용자이름" />
+
+				<link rel="stylesheet" href="github-markdown.css" />
 			</Helmet>
 			<ThemeProvider theme={theme}>
 				<GlobalStyle />

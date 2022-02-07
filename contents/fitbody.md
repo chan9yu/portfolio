@@ -32,12 +32,7 @@ thumbnail: './thumbnail/fitbody.png'
 
 ## Index 📖
 
-1. 프로젝트 주제 선정 이유
-1. 프로젝트 스케줄
-1. 프로젝트 사용기술
-1. 프로젝트 구조
-1. 주요 기능 미리보기
-   <br />
+1.&nbsp;프로젝트 주제 선정 이유 <br /> 2.&nbsp;프로젝트 스케줄 <br /> 3.&nbsp;프로젝트 사용기술 <br /> 4.&nbsp;프로젝트 구조 <br /> 5.&nbsp;주요 기능 미리보기 <br />
 
 ## 선정 이유 ❓
 
@@ -165,7 +160,6 @@ thumbnail: './thumbnail/fitbody.png'
     <td>미리보기</td>
     <td>설명</td>
   </tr>
-
   <tr>
     <td>
       <img src=https://user-images.githubusercontent.com/80776262/145027292-37be7a17-61b0-4f43-8577-5340256cecf5.gif width="600">
@@ -176,7 +170,6 @@ thumbnail: './thumbnail/fitbody.png'
       - 여러 상품을 볼 수 있고  LOAD MORE 버튼으로 더욱 많은 상품을 볼 수 있습니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src="https://user-images.githubusercontent.com/80776262/144866236-eda00afb-fec6-4804-89c9-dbc01d443e50.gif" width="600">
@@ -187,7 +180,6 @@ thumbnail: './thumbnail/fitbody.png'
       - 이메일형식에 맞아야하며 비밀번호는 5자리 이상이여야 가입이 가능합니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src="https://user-images.githubusercontent.com/80776262/145027782-7bc0446e-087d-4b22-9292-4e1df506c09f.gif" width="600">
@@ -198,7 +190,6 @@ thumbnail: './thumbnail/fitbody.png'
       - 카테고리안에는 다시 서브카테고리가 존재해 원하는 상품을 쉽게 찾을 수 있습니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src="https://user-images.githubusercontent.com/80776262/145028878-367706df-0d29-433a-a4c0-230c1105033e.gif" width="600">
@@ -210,7 +201,6 @@ thumbnail: './thumbnail/fitbody.png'
       - 아래에는 댓글을 자유롭게 작성할 수 있으며, 다른 상품을 랜덤으로 4개를 보여주는 부분이 있습니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src="https://user-images.githubusercontent.com/80776262/144866533-f60197dd-5bf0-4375-9101-f711225ff0f5.gif" width="600">
@@ -221,7 +211,6 @@ thumbnail: './thumbnail/fitbody.png'
       - 장바구니 상품들의 총 가격을 알 수 있고, 전체 구매와 삭제가 가능합니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src="https://user-images.githubusercontent.com/80776262/144865267-0c1a3b74-ffde-433e-8513-707127bd6e05.gif" width="600">
@@ -231,7 +220,6 @@ thumbnail: './thumbnail/fitbody.png'
       - 지금까지 구매했던 상품들이 기록이된 페이지 입니다.
     </td>
   </tr>
-
   <tr>
     <td>
       <img src="https://user-images.githubusercontent.com/80776262/144867240-db153ecf-a924-4146-8de2-34c7da6cac06.gif" width="600">
