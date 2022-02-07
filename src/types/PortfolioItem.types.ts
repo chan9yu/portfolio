@@ -18,6 +18,7 @@ export interface IPortfolioFrontmatterType {
 export interface IPortfolioItemType {
 	node: {
 		id: string
+		html: string
 		fields: {
 			slug: string
 		}

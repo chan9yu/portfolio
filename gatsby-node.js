@@ -36,12 +36,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 	const queryAllMarkdownData = await graphql(
 		`
 			{
-				allMarkdownRemark(
-					sort: {
-						order: DESC
-						fields: [frontmatter___date, frontmatter___title]
-					}
-				) {
+				allMarkdownRemark {
 					edges {
 						node {
 							fields {
@@ -73,7 +68,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 		}
 	}) => {
 		const pageOptions = {
-			path: slug,
+			path: `portfolio${slug}`,
 			component: PostTemplateComponent,
 			context: { slug }
 		}

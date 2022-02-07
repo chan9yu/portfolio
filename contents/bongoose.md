@@ -55,19 +55,19 @@ thumbnail: './thumbnail/bongoose.png'
 
 ## 프로젝트 기술 스택 🛠
 
-![사용기술](https://user-images.githubusercontent.com/80776262/146226591-073b8d87-941a-42b3-8ea0-8672669b737a.png)
+<img src="https://user-images.githubusercontent.com/80776262/146226591-073b8d87-941a-42b3-8ea0-8672669b737a.png" width="100%" />
 
 <br />
 
 ## BackEnd 구조 📃
 
-![iPhone 12, 12 Pro – 10](https://user-images.githubusercontent.com/80776262/146226681-36ea5744-bc34-4c30-9b55-44b0e8c2ade8.png)
+  <img src="https://user-images.githubusercontent.com/80776262/146226681-36ea5744-bc34-4c30-9b55-44b0e8c2ade8.png" width="100%" />
 
 <br />
 
 ## ERD (ER 다이어그램) 📝
 
-![boongoose drawio_1](https://user-images.githubusercontent.com/80776262/146206285-0e34c642-b65f-4124-8f39-44b596d3c111.png)
+<img src="https://user-images.githubusercontent.com/80776262/146206285-0e34c642-b65f-4124-8f39-44b596d3c111.png" width="100%" />
 
 <br />
 
@@ -236,24 +236,24 @@ thumbnail: './thumbnail/bongoose.png'
 <table>
   <tr>
     <td>
-      <img src="https://user-images.githubusercontent.com/80776262/146205897-f9eb0919-b67a-4af9-a569-9299e40d381b.png">
+      <img src="https://user-images.githubusercontent.com/80776262/146205897-f9eb0919-b67a-4af9-a569-9299e40d381b.png" width="100%">
     </td>
     <td>
-      <img src="https://user-images.githubusercontent.com/80776262/146205991-0f48fae4-9dea-4ac5-bc66-af4706261908.png">
+      <img src="https://user-images.githubusercontent.com/80776262/146205991-0f48fae4-9dea-4ac5-bc66-af4706261908.png" width="100%">
     </td>
     <td>
-      <img src="https://user-images.githubusercontent.com/80776262/146205996-b772dbab-5fd9-483b-81b3-c51e65ca33fa.png">
+      <img src="https://user-images.githubusercontent.com/80776262/146205996-b772dbab-5fd9-483b-81b3-c51e65ca33fa.png" width="100%">
     </td>
   </tr>
   <tr>
     <td>
-      <img src="https://user-images.githubusercontent.com/80776262/146206012-06d60de9-5c82-4943-9212-0c2d10cdaa9f.png">
+      <img src="https://user-images.githubusercontent.com/80776262/146206012-06d60de9-5c82-4943-9212-0c2d10cdaa9f.png" width="100%">
     </td>
     <td>
-      <img src="https://user-images.githubusercontent.com/80776262/146206019-17ecd7fd-ea68-4744-92c4-7c8d906b39ee.png">
+      <img src="https://user-images.githubusercontent.com/80776262/146206019-17ecd7fd-ea68-4744-92c4-7c8d906b39ee.png" width="100%">
     </td>
     <td>
-      <img src="https://user-images.githubusercontent.com/80776262/146206017-d5eb1858-f077-4bd0-ae64-8f658418a3c1.png">
+      <img src="https://user-images.githubusercontent.com/80776262/146206017-d5eb1858-f077-4bd0-ae64-8f658418a3c1.png" width="100%">
     </td>
   </tr>
 </table>

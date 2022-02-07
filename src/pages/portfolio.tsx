@@ -20,7 +20,6 @@ interface Props {
 
 const PortfolioPage: FC<Props> = ({ data }) => {
 	const { edges } = data.allMarkdownRemark
-	console.log(edges)
 
 	return (
 		<AppLayout>
