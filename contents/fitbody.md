@@ -1,6 +1,6 @@
 ---
-title: 'Fit body',
-type: 'solo',
+title: 'Fit body'
+type: 'solo'
 skills:
   {
     fe: ['vue', 'nuxt', 'javascript', 'sass', 'vuetify'],
@@ -9,10 +9,10 @@ skills:
 description:
   [
     'Fit body(핏바디)는 다양한 홈트레이닝용 운동기구를 판매하는 쇼핑몰 입니다.',
-    '계속되는 코로나로 인해 헬스장보다는 홈트레이닝을 꾸리는 사람들이 늘어가는 추세이기 떄문에 운동용품을 아이템으로 쇼핑몰 주제로 만들어봤습니다.',
-    '쇼핑몰 프로젝트를 구현하기위해 백엔드 영역을 공부하며 웹 개발에 대해 좀 더 넓게 볼 수 있게 성장한 프로젝트 입니다!'
+    '프로젝트를 구현하기위해 프론트 뿐만 아니라 백엔드 영역까지 공부하며 배포까지 진행하였으며',
+    '웹 개발에 대해 좀 더 넓게 볼 수 있게 성장한 프로젝트 입니다!'
   ]
-thumbnail: './fitbody.png'
+thumbnail: './thumbnail/fitbody.png'
 ---
 
 # Fit body 👩‍👦‍👦

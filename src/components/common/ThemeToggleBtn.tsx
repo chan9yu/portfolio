@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useCallback, useRef, useState } from 'react'
+import { ChangeEvent, useCallback, useRef } from 'react'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 import styled from '@emotion/styled'
 import { motion } from 'framer-motion'

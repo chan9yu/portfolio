@@ -1,6 +1,6 @@
 ---
 title: 'Bongoose'
-type: 'team',
+type: 'team'
 skills:
   {
     fe: ['vue', 'vuex', 'typescript', 'sass', 'bootstrap'],
@@ -10,9 +10,9 @@ description:
   [
     'Bongoose(봉구스) 는 소셜 네트워크 서비스(SNS)를 제공하는 웹 애플리케이션 입니다.',
     '처음으로 진행한 팀프로젝트이며, 팀장과 Front-End, Design을 맡았습니다.',
-    '백엔드와 직접 소통하면서 프로젝트를 완성해가는 과정에서 제일 크게 성장이 될 수 있었던 프로젝트 였습니다.'
+    '백엔드와 직접 소통하고 프로젝트를 완성하는 과정에서 크게 성장이 될 수 있었던 프로젝트 였습니다.'
   ]
-thumbnail: './bongoose.png'
+thumbnail: './thumbnail/bongoose.png'
 ---
 
 <p align="middle" >

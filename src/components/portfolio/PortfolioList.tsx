@@ -2,39 +2,26 @@ import { FC } from 'react'
 import styled from '@emotion/styled'
 
 import PortfolioItem from './PortfolioItem'
+import { IPortfolioItemType } from 'types/PortfolioItem.types'
 
 const Wrapper = styled.div`
-	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	align-items: flex-start;
+	gap: 40px;
 `
 
-export interface ProtfolioType {
-	node: {
-		id: string
-		frontmatter: {
-			title: string
-			summary: string
-			date: string
-			categories: string[]
-			thumbnail: {
-				publicURL: string
-			}
-		}
-	}
-}
-
 interface Props {
-	portfolios: ProtfolioType[]
+	portfolios: IPortfolioItemType[]
 }
 
 const PortfolioList: FC<Props> = ({ portfolios }) => {
 	return (
 		<Wrapper>
-			{portfolios.map(({ node: { id, frontmatter } }) => (
-				<PortfolioItem key={id} {...frontmatter} />
-			))}
+			{portfolios.map(({ node: { id, frontmatter, fields } }) => {
+				console.log(fields.slug)
+				return <PortfolioItem key={id} {...frontmatter} link={fields.slug} />
+			})}
 		</Wrapper>
 	)
 }

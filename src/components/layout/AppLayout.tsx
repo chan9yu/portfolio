@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import { FC } from 'react'
 import styled from '@emotion/styled'
 
 import RootWrapper from 'components/common/RootWrapper'
@@ -17,6 +17,9 @@ const Container = styled.div`
 		gap: 100px;
 		.main_content {
 			width: 65%;
+			@media ${({ theme }) => theme.device.NoteBook} {
+				width: 100%;
+			}
 		}
 	}
 `

@@ -2,19 +2,18 @@ import { FC } from 'react'
 import { graphql } from 'gatsby'
 import styled from '@emotion/styled'
 
+import { IPortfolioItemType } from 'types/PortfolioItem.types'
 import AppLayout from 'components/layout/AppLayout'
-import PortfolioList, {
-	ProtfolioType
-} from 'components/portfolio/PortfolioList'
+import PortfolioList from 'components/portfolio/PortfolioList'
 
 const Container = styled.div`
-	height: 100vh;
+	margin: 50px 0 100px;
 `
 
 interface Props {
 	data: {
 		allMarkdownRemark: {
-			edges: ProtfolioType[]
+			edges: IPortfolioItemType[]
 		}
 	}
 }
@@ -40,13 +39,21 @@ export const getProtfolioList = graphql`
 			edges {
 				node {
 					id
+					fields {
+						slug
+					}
 					frontmatter {
 						title
-						summary
-						date(formatString: "YYYY.MM.DD.")
-						categories
+						type
+						skills {
+							fe
+							be
+						}
+						description
 						thumbnail {
-							publicURL
+							childImageSharp {
+								gatsbyImageData(width: 400, height: 225)
+							}
 						}
 					}
 				}
