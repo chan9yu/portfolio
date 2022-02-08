@@ -16,6 +16,9 @@ export const Container = styled.div`
 			width: 115px;
 			border: 1px solid var(--primary);
 			margin: 5px 0 0 0;
+			@media ${({ theme }) => theme.device.mobileL} {
+				width: 50px;
+			}
 		}
 	}
 	.introducen__title {
@@ -42,6 +45,10 @@ export const ButtonGroup = styled.div`
 	right: 20px;
 	display: flex;
 	gap: 5px;
+	@media ${({ theme }) => theme.device.tablet} {
+		top: -40px;
+		right: 0;
+	}
 `
 
 export const Button = styled.button`

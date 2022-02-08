@@ -13,12 +13,15 @@ const Container = styled.div`
 	cursor: pointer;
 `
 
-const Switch = styled.div<{ isDark: boolean }>`
+const Switch = styled.div`
 	background-color: var(--hr);
 	display: flex;
 	border-radius: 50px;
 	padding: 15px 10px;
 	cursor: pointer;
+	@media ${({ theme }) => theme.device.mobileL} {
+		padding: 10px;
+	}
 `
 
 const Theme = styled(motion.div)`
@@ -28,6 +31,9 @@ const Theme = styled(motion.div)`
 	align-items: center;
 	gap: 5px;
 	box-sizing: border-box;
+	@media ${({ theme }) => theme.device.mobileL} {
+		width: 80px;
+	}
 `
 
 interface ThemeType {
@@ -39,7 +45,7 @@ const ThemeToggleBtn = () => {
 	const inputRef = useRef<HTMLInputElement>(null)
 
 	const onToggleTheme = useCallback(
-		(toggleTheme: ThemeType[toggleTheme]) =>
+		(toggleTheme: (theme: string) => void) =>
 			(e: ChangeEvent<HTMLInputElement>) => {
 				toggleTheme(e.target.checked ? 'dark' : 'light')
 			},

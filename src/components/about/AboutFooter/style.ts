@@ -15,6 +15,9 @@ export const AboutFooterContainer = styled.div`
 			width: 65px;
 			border: 1px solid var(--primary);
 			margin: 5px 0 0 0;
+			@media ${({ theme }) => theme.device.mobileL} {
+				width: 25px;
+			}
 		}
 	}
 	.footer__text {

@@ -13,6 +13,9 @@ export const HeaderWarpper = styled.header`
 	@media ${({ theme }) => theme.device.tabletL} {
 		padding: 10px 30px;
 	}
+	@media ${({ theme }) => theme.device.mobileL} {
+		margin-bottom: 46px;
+	}
 `
 
 export const MenuBtn = styled.div`

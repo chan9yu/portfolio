@@ -1,8 +1,9 @@
 import styled from '@emotion/styled'
+import { motion } from 'framer-motion'
 
 export const HeaderWrapper = styled.header`
 	width: 100%;
-	padding: 30px 0 15px;
+	padding-top: 30px;
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
@@ -13,14 +14,53 @@ export const HeaderWrapper = styled.header`
 	top: 0;
 	left: 0;
 	z-index: 10;
+	@media ${({ theme }) => theme.device.mobileL} {
+		padding-top: 10px;
+	}
 	.header__container {
 		padding: 0 50px;
 		display: flex;
-		justify-content: space-between;
-		.header__left {
-			display: flex;
-			gap: 20px;
-			align-items: center;
+		gap: 20px;
+		align-items: center;
+		@media ${({ theme }) => theme.device.mobileL} {
+			padding: 0 30px;
+			flex-direction: column;
+			gap: 10px;
 		}
+	}
+`
+
+export const HeaderMenu = styled.div`
+	width: 79%;
+	margin: 0 auto;
+	display: flex;
+	gap: 20px;
+	.header__menu_item {
+		color: var(--gray);
+		font-size: ${({ theme }) => theme.fontSizes.base};
+		cursor: pointer;
+		transition: 0.3s;
+		&:hover {
+			filter: brightness(70%);
+		}
+		&:first-of-type {
+			color: var(--primary);
+		}
+	}
+`
+
+export const Point = styled(motion.div)`
+	border: 2px solid var(--primary);
+	margin-top: 10px;
+`
+
+export const Menu = styled.div<{ active: boolean }>`
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	color: ${({ active }) => active && 'var(--primary)'};
+	transition: color 0.3s ease-in-out;
+	svg {
+		fill: ${({ active }) => active && 'var(--primary)'};
 	}
 `

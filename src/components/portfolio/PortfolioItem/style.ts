@@ -7,6 +7,9 @@ export const ProtfolioCard = styled.div`
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
+	@media ${({ theme }) => theme.device.tablet} {
+		flex-direction: column;
+	}
 `
 
 export const ProtfolioLink = styled(Link)`
@@ -14,8 +17,14 @@ export const ProtfolioLink = styled(Link)`
 `
 
 export const ThumbnailImage = styled(GatsbyImage)`
-	width: 100%;
+	width: 400px;
 	border-radius: 5px;
+	@media ${({ theme }) => theme.device.tabletL} {
+		width: 300px;
+	}
+	@media ${({ theme }) => theme.device.tablet} {
+		width: 100%;
+	}
 `
 
 export const ProtfolioInfo = styled.div`

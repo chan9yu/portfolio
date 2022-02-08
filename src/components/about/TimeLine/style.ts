@@ -22,6 +22,9 @@ export const TimeLineContainer = styled.div`
 			width: 65px;
 			border: 1px solid var(--primary);
 			margin: 5px 0 0 0;
+			@media ${({ theme }) => theme.device.mobileL} {
+				width: 40px;
+			}
 		}
 	}
 `
@@ -31,21 +34,23 @@ export const TimeLineWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 60px;
-
 	font-size: ${({ theme }) => theme.fontSizes.xl};
 	.timeline__item_box {
 		display: flex;
 		flex-direction: column;
 		gap: 20px;
+		@media ${({ theme }) => theme.device.mobileL} {
+			gap: 10px;
+		}
 		.timeline__item_content {
 			display: flex;
 			gap: 30px;
 			.timeline__item_date {
-				width: 18.45%;
+				width: 18%;
 				color: var(--gray);
 			}
 			.timeline__item_sub_title {
-				width: 78.23%;
+				width: 78%;
 				display: flex;
 				flex-direction: column;
 				gap: 10px;
@@ -54,5 +59,8 @@ export const TimeLineWrapper = styled.div`
 				}
 			}
 		}
+	}
+	@media ${({ theme }) => theme.device.mobileL} {
+		gap: 30px;
 	}
 `

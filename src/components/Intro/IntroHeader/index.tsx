@@ -22,14 +22,14 @@ const IntroHeader = () => {
 				<Logo size="xl" />
 				<PageMenu intro hide />
 				<MenuBtn
-					className={isMenu ? 'active' : null}
+					className={isMenu ? 'active' : undefined}
 					onClick={onClickToggleIsMenu}
 				/>
 				<AboutMenus hide />
 			</HeaderWarpper>
-			<MobileMenu className={isMenu ? 'active' : null}>
-				<PageMenu intro />
-				<AboutMenus />
+			<MobileMenu className={isMenu ? 'active' : undefined}>
+				<PageMenu intro hide={false} />
+				<AboutMenus hide={false} />
 			</MobileMenu>
 		</>
 	)

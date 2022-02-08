@@ -1,26 +1,42 @@
-import React, { useCallback, useState } from 'react'
-import { AnimatePresence } from 'framer-motion'
+import styled from '@emotion/styled'
 
 import { frontEndItems, backEndItems } from 'assets/data/about/skillItems'
-import { Item, Container, Wrapper, Grid, Overlay, ActiveItem } from './style'
+import SkillBox from './SkillBox'
+
+export const Container = styled.div`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	.skill__header {
+		display: flex;
+		flex-direction: column;
+		.skill__header_title {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			> h2 {
+				font-size: ${({ theme }) => theme.fontSizes.xxxl};
+				font-weight: 600;
+			}
+			> span {
+				color: var(--primary);
+				font-size: ${({ theme }) => theme.fontSizes.small};
+				font-weight: 100;
+			}
+		}
+		> hr {
+			width: 65px;
+			border: 1px solid var(--primary);
+			margin: 5px 0 0 0;
+			@media ${({ theme }) => theme.device.mobileL} {
+				width: 30px;
+			}
+		}
+	}
+`
 
 const Skills = () => {
-	const [id, setId] = useState<string | null>(null)
-
-	const onOpen = useCallback(
-		(boxId: string) => () => {
-			setId(boxId)
-		},
-		[]
-	)
-
-	const onClose = useCallback(() => setId(null), [])
-
-	const feItemCurrentIndex = useCallback(
-		(name: string) => frontEndItems.findIndex(item => item.name === name),
-		[]
-	)
-
 	return (
 		<Container>
 			<div className="skill__header">
@@ -30,48 +46,8 @@ const Skills = () => {
 				</div>
 				<hr />
 			</div>
-			<Wrapper>
-				<span>Front-End</span>
-				<Grid>
-					{frontEndItems.map(item => (
-						<Item
-							key={item.name}
-							layoutId={item.name}
-							onClick={onOpen(item.name)}
-						>
-							<img src={item.img} alt={item.name} />
-							<span className="skill__name">{item.name}</span>
-						</Item>
-					))}
-				</Grid>
-				<AnimatePresence initial={false}>
-					{id && (
-						<Overlay
-							initial={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}
-							animate={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
-							exit={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}
-							onClick={onClose}
-						>
-							<ActiveItem layoutId={id}>
-								<div className="acive_header">
-									<img
-										src={frontEndItems[feItemCurrentIndex(id)].img}
-										alt={frontEndItems[feItemCurrentIndex(id)].name}
-									/>
-									<span className="acive_title">
-										{frontEndItems[feItemCurrentIndex(id)].name}
-									</span>
-								</div>
-								<div className="active_description">
-									{frontEndItems[feItemCurrentIndex(id)].content.map(v => (
-										<span key={v}>{v}</span>
-									))}
-								</div>
-							</ActiveItem>
-						</Overlay>
-					)}
-				</AnimatePresence>
-			</Wrapper>
+			<SkillBox items={frontEndItems} title="Front-End" />
+			<SkillBox items={backEndItems} title="Back-End" />
 		</Container>
 	)
 }

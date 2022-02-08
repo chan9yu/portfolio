@@ -18,12 +18,9 @@ interface Props {
 const PortfolioList: FC<Props> = ({ portfolios }) => {
 	return (
 		<Wrapper>
-			{portfolios.map(({ node: { id, frontmatter, fields } }) => {
-				console.log(fields.slug)
-				return (
-					<PortfolioItem key={id} {...frontmatter} link={`.${fields.slug}`} />
-				)
-			})}
+			{portfolios.map(({ node: { id, frontmatter, fields } }) => (
+				<PortfolioItem key={id} {...frontmatter} link={`.${fields.slug}`} />
+			))}
 		</Wrapper>
 	)
 }

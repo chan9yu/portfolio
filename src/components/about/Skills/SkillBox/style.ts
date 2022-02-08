@@ -1,36 +1,6 @@
 import styled from '@emotion/styled'
 import { motion } from 'framer-motion'
 
-export const Container = styled.div`
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	.skill__header {
-		display: flex;
-		flex-direction: column;
-		.skill__header_title {
-			display: flex;
-			align-items: center;
-			gap: 10px;
-			> h2 {
-				font-size: ${({ theme }) => theme.fontSizes.xxxl};
-				font-weight: 600;
-			}
-			> span {
-				color: var(--primary);
-				font-size: ${({ theme }) => theme.fontSizes.small};
-				font-weight: 100;
-			}
-		}
-		> hr {
-			width: 65px;
-			border: 1px solid var(--primary);
-			margin: 5px 0 0 0;
-		}
-	}
-`
-
 export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -44,6 +14,10 @@ export const Grid = styled.div`
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 25px;
+	@media ${({ theme }) => theme.device.mobileL} {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 18px;
+	}
 `
 
 export const Item = styled(motion.div)`
@@ -63,6 +37,9 @@ export const Item = styled(motion.div)`
 	.skill__name {
 		font-size: ${({ theme }) => theme.fontSizes.lg};
 		font-weight: 500;
+	}
+	@media ${({ theme }) => theme.device.mobileL} {
+		height: 150px;
 	}
 `
 
@@ -87,6 +64,10 @@ export const ActiveItem = styled(Item)`
 		flex-direction: column;
 		gap: 10px;
 		font-size: ${({ theme }) => theme.fontSizes.lg};
+	}
+	@media ${({ theme }) => theme.device.mobileL} {
+		width: 80%;
+		height: auto;
 	}
 `
 

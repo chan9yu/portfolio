@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import { AnimatePresence } from 'framer-motion'
 
 import introductions from 'assets/data/about/introductions'
@@ -25,7 +25,7 @@ const Introduce = () => {
 	const prevCard = useCallback(() => {
 		setBack(true)
 		setVisible(prev => (prev === 0 ? 0 : prev - 1))
-	})
+	}, [])
 
 	const cardVariants = useMemo(
 		() => ({
@@ -68,7 +68,7 @@ const Introduce = () => {
 					<Button onClick={prevCard}>prev</Button>
 					<Button onClick={nextCard}>next</Button>
 				</ButtonGroup>
-				<AnimatePresence custom={back}>
+				<AnimatePresence initial={false} custom={back}>
 					{introductions.map(
 						(introduction, i) =>
 							visible === i && (
@@ -81,8 +81,8 @@ const Introduce = () => {
 									exit="exit"
 								>
 									<h2>{introduction.title}</h2>
-									{introduction.content.map(content => (
-										<div key={content}>
+									{introduction.content.map((content, index) => (
+										<div key={index}>
 											{content.map(v => (
 												<span key={v}>{v}</span>
 											))}

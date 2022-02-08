@@ -1,6 +1,7 @@
-import React, { FC } from 'react'
-import 'github-markdown-css'
+import { FC } from 'react'
+
 import { Container } from './style'
+import 'github-markdown-css'
 
 interface Props {
 	html: string

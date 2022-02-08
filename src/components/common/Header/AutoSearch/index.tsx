@@ -1,14 +1,19 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
-import { FiSearch, FiMic, FiX } from 'react-icons/fi'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
-import { SearchWrapper } from './style'
+import {
+	FiXIcon,
+	MicIcon,
+	MobileSearchIcon,
+	SearchIcon,
+	SearchWrapper
+} from './style'
 
 const AutoSearch = () => {
 	const txt = '안녕하세요 성장하는 FE개발자 여찬규 입니다!'
 	const [text, setText] = useState('')
 	const [count, setCount] = useState(0)
 
-	const interval = useRef<NodeJS.Timer | null>(null)
+	const interval = useRef<NodeJS.Timer>()
 
 	const clearText = useCallback(() => {
 		setTimeout(() => {
@@ -23,7 +28,7 @@ const AutoSearch = () => {
 			setCount(count + 1)
 		}, 100)
 		if (count === txt.length) {
-			clearInterval(interval.current)
+			clearInterval(interval.current as NodeJS.Timeout)
 			clearText()
 		}
 		return () => clearInterval(interval.current as NodeJS.Timeout)
@@ -31,12 +36,13 @@ const AutoSearch = () => {
 
 	return (
 		<SearchWrapper>
+			<MobileSearchIcon />
 			<span>{text}</span>
 			<div className="search__icons">
-				<FiX size={20} color="#777" />
+				<FiXIcon color="#777" />
 				<div className="search__vertical_line" />
-				<FiSearch size={20} color="#fff" />
-				<FiMic size={20} color="#fff" />
+				<SearchIcon color="#fff" />
+				<MicIcon color="#fff" />
 			</div>
 		</SearchWrapper>
 	)
