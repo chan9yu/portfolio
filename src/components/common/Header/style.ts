@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { motion } from 'framer-motion'
+import { Link } from 'gatsby'
 
 export const HeaderWrapper = styled.header`
 	width: 100%;
@@ -35,23 +36,14 @@ export const HeaderMenu = styled.div`
 	margin: 0 auto;
 	display: flex;
 	gap: 20px;
-	.header__menu_item {
-		color: var(--gray);
-		font-size: ${({ theme }) => theme.fontSizes.base};
-		cursor: pointer;
-		transition: 0.3s;
-		&:hover {
-			filter: brightness(70%);
-		}
-		&:first-of-type {
-			color: var(--primary);
-		}
-	}
+	position: relative;
+	padding-bottom: 15px;
 `
 
-export const Point = styled(motion.div)`
-	border: 2px solid var(--primary);
-	margin-top: 10px;
+export const MenuGroup = styled(Link)`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 `
 
 export const Menu = styled.div<{ active: boolean }>`
@@ -59,8 +51,19 @@ export const Menu = styled.div<{ active: boolean }>`
 	align-items: center;
 	gap: 8px;
 	color: ${({ active }) => active && 'var(--primary)'};
-	transition: color 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	&:hover {
+		filter: brightness(70%);
+	}
 	svg {
 		fill: ${({ active }) => active && 'var(--primary)'};
 	}
+`
+
+export const Point = styled(motion.div)`
+	position: absolute;
+	bottom: 0;
+	width: 70px;
+	border: 2px solid var(--primary);
+	margin-top: 10px;
 `

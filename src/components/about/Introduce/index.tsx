@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback } from 'react'
 import { AnimatePresence } from 'framer-motion'
+import { useMediaQuery } from 'react-responsive'
 
 import introductions from 'assets/data/about/introductions'
 import {
@@ -14,6 +15,8 @@ import {
 const Introduce = () => {
 	const [visible, setVisible] = useState(0)
 	const [back, setBack] = useState(false)
+
+	const isNoteBook = useMediaQuery({ query: '(max-width:1024px)' })
 
 	const nextCard = useCallback(() => {
 		setBack(false)
@@ -30,7 +33,7 @@ const Introduce = () => {
 	const cardVariants = useMemo(
 		() => ({
 			entry: (isBack: boolean) => ({
-				x: isBack ? -500 : 500,
+				x: !isNoteBook ? (isBack ? -500 : 500) : 0,
 				opacity: 0,
 				transition: {
 					duration: 0.3
@@ -44,7 +47,7 @@ const Introduce = () => {
 				}
 			},
 			exit: (isBack: boolean) => ({
-				x: isBack ? 500 : -500,
+				x: !isNoteBook ? (isBack ? 500 : -500) : 0,
 				opacity: 0,
 				transition: {
 					duration: 0.3

@@ -1,4 +1,4 @@
-import { FC, useCallback, useState } from 'react'
+import { FC, useCallback, useMemo, useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
 
 import { Item, Wrapper, Grid, Overlay, ActiveItem } from './style'
@@ -29,6 +29,13 @@ const SkillBox: FC<Props> = ({ items, title }) => {
 		[]
 	)
 
+	const itemVariants = useMemo(
+		() => ({
+			hover: { scale: 1.1 }
+		}),
+		[]
+	)
+
 	return (
 		<Wrapper>
 			<span>{title}</span>
@@ -36,8 +43,10 @@ const SkillBox: FC<Props> = ({ items, title }) => {
 				{items.map(item => (
 					<Item
 						key={item.name}
-						layoutId={item.name}
+						layoutId={`item-${item.name}`}
 						onClick={onOpen(item.name)}
+						variants={itemVariants}
+						whileHover="hover"
 					>
 						<img src={item.img} alt={item.name} />
 						<span className="skill__name">{item.name}</span>
@@ -52,7 +61,7 @@ const SkillBox: FC<Props> = ({ items, title }) => {
 						exit={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}
 						onClick={onClose}
 					>
-						<ActiveItem layoutId={id}>
+						<ActiveItem layoutId={`item-${id}`}>
 							<div className="acive_header">
 								<img
 									src={items[feItemCurrentIndex(id)].img}

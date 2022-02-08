@@ -22,16 +22,6 @@ const deviceSizes = {
 	NoteBook: '1440px'
 }
 
-const colors = {
-	bgColor: '#202124',
-	introBgColor: '#35363A',
-	btnColor: '#303134',
-	btnBorderColor: '#5F6368',
-	fontColor: '#FFFFFF',
-	primary: '#D35400',
-	gray: '#707070'
-}
-
 const device = {
 	mobileS: `only screen and (max-width: ${deviceSizes.mobileS})`,
 	mobileM: `only screen and (max-width: ${deviceSizes.mobileM})`,
@@ -43,7 +33,6 @@ const device = {
 
 const theme = {
 	fontSizes,
-	colors,
 	deviceSizes,
 	device
 }

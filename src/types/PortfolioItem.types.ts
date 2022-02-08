@@ -2,6 +2,7 @@ import { IGatsbyImageData } from 'gatsby-plugin-image'
 
 export interface IPortfolioFrontmatterType {
 	title: string
+	link: string
 	type: string
 	skills: {
 		fe: string[]

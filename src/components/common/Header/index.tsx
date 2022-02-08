@@ -1,10 +1,9 @@
 import { FaSearch, FaPortrait } from 'react-icons/fa'
-import { Link } from 'gatsby'
 import { useMatch } from '@reach/router'
 
 import Logo from '../Logo'
 import AutoSearch from './AutoSearch'
-import { HeaderWrapper, HeaderMenu, Menu, Point } from './style'
+import { HeaderWrapper, HeaderMenu, Menu, Point, MenuGroup } from './style'
 
 const Header = () => {
 	const aboutMatch = useMatch('/about')
@@ -17,20 +16,20 @@ const Header = () => {
 				<AutoSearch />
 			</div>
 			<HeaderMenu>
-				<Link to="/about">
+				<MenuGroup to="/about">
 					<Menu active={Boolean(aboutMatch)}>
 						<FaSearch />
 						ABOUT
 					</Menu>
-					{aboutMatch && <Point layoutId="point" />}
-				</Link>
-				<Link to="/portfolio">
+					{aboutMatch && <Point />}
+				</MenuGroup>
+				<MenuGroup to="/portfolio">
 					<Menu active={Boolean(portfolioMatch)}>
 						<FaPortrait />
 						PORTFOLIO
 					</Menu>
-					{portfolioMatch && <Point layoutId="point" />}
-				</Link>
+					{portfolioMatch && <Point />}
+				</MenuGroup>
 			</HeaderMenu>
 		</HeaderWrapper>
 	)

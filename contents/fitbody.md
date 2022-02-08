@@ -1,4 +1,6 @@
 ---
+date: '2021-12-06'
+link: 'https://github.com/changyuyeo/Fit-body-FE'
 title: 'Fit body'
 type: 'solo'
 skills:

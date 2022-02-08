@@ -1,29 +1,55 @@
 import { FC } from 'react'
+import { BsFillBackspaceFill, BsGithub } from 'react-icons/bs'
 import { graphql, Link } from 'gatsby'
+import styled from '@emotion/styled'
 
 import { IPortfolioItemType } from 'types/PortfolioItem.types'
 import AppLayout from 'components/layout/AppLayout'
 import PortfolioContent from 'components/portfolio/PortfolioContent'
-import { BsFillBackspaceFill } from 'react-icons/bs'
-import styled from '@emotion/styled'
 
-const BackPageBtn = styled(Link)`
-	position: absolute;
-	top: 150px;
-	left: 80px;
-	width: auto;
-	background-color: var(--gray);
+const Container = styled.div`
+	margin-top: 50px;
 	display: flex;
 	align-items: center;
+	gap: 10px;
+`
+
+const BackPageBtn = styled(Link)`
+	margin-left: 45px;
+	background-color: var(--logo_color_2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 8px;
-	padding: 8px;
+	padding: 6px 12px;
 	border-radius: 50px;
 	transition: 0.3s;
 	&:hover {
 		filter: brightness(70%);
 	}
-	@media ${({ theme }) => theme.device.mobileL} {
-		left: 55px;
+	span {
+		color: #eee;
+	}
+	@media only screen and (max-width: 767px) {
+		margin-left: 15px;
+	}
+`
+
+const GithubBtn = styled.a`
+	background-color: var(--gray);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 12px;
+	border-radius: 50px;
+	transition: 0.3s;
+	cursor: pointer;
+	&:hover {
+		filter: brightness(70%);
+	}
+	span {
+		color: #eee;
 	}
 `
 
@@ -36,14 +62,24 @@ interface Props {
 }
 
 const PortfolioTemplate: FC<Props> = ({ data }) => {
-	const { html } = data.allMarkdownRemark.edges[0].node
+	const { html, frontmatter } = data.allMarkdownRemark.edges[0].node
 
 	return (
 		<AppLayout>
-			<BackPageBtn to="/portfolio">
-				<BsFillBackspaceFill />
-				<span>뒤로가기</span>
-			</BackPageBtn>
+			<Container>
+				<BackPageBtn to="/portfolio">
+					<BsFillBackspaceFill fill="#eee" />
+					<span>뒤로가기</span>
+				</BackPageBtn>
+				<GithubBtn
+					href={frontmatter.link}
+					target="_blank"
+					rel="noreferrer noopener"
+				>
+					<BsGithub fill="#eee" />
+					<span>저장소 가기</span>
+				</GithubBtn>
+			</Container>
 			<PortfolioContent html={html} />
 		</AppLayout>
 	)
@@ -59,6 +95,7 @@ export const queryMarkdownDataBySlug = graphql`
 					html
 					frontmatter {
 						title
+						link
 						type
 						skills {
 							fe

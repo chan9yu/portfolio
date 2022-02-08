@@ -14,6 +14,13 @@ export const Grid = styled.div`
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 25px;
+	@media ${({ theme }) => theme.device.NoteBook} {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	@media ${({ theme }) => theme.device.tablet} {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
 	@media ${({ theme }) => theme.device.mobileL} {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 18px;

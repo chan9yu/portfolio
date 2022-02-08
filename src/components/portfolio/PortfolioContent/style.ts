@@ -5,7 +5,7 @@ export const Container = styled.div`
 		box-sizing: border-box;
 		min-width: 200px;
 		max-width: 980px;
-		margin: 50px auto 100px;
+		margin: 0 auto 100px;
 		padding: 45px;
 		background-color: transparent;
 		.language-text {

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import { Link } from 'gatsby'
 
-import skills from 'assets/data/skills'
+import skills from 'assets/data/Intro/skills'
 import { AddIcon, SkillBox, SkillContainer, SkillTooltip } from './style'
 
 const IntroSkill = () => {

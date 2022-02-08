@@ -8,6 +8,9 @@ import PortfolioList from 'components/portfolio/PortfolioList'
 
 const Container = styled.div`
 	margin: 50px 0 100px;
+	@media ${({ theme }) => theme.device.tablet} {
+		margin: 30px 0 80px;
+	}
 `
 
 interface Props {
@@ -34,7 +37,7 @@ export default PortfolioPage
 
 export const getProtfolioList = graphql`
 	query getProtfolioList {
-		allMarkdownRemark {
+		allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
 			edges {
 				node {
 					id

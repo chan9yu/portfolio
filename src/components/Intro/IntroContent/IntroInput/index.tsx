@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { FiSearch, FiMic } from 'react-icons/fi'
 

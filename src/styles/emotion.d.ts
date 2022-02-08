@@ -22,15 +22,6 @@ declare module '@emotion/react' {
 			tabletL: string
 			NoteBook: string
 		}
-		colors: {
-			bgColor: string
-			introBgColor: string
-			btnColor: string
-			btnBorderColor: string
-			fontColor: string
-			primary: string
-			gray: string
-		}
 		device: {
 			mobileS: string
 			mobileM: string

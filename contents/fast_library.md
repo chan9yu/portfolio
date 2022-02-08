@@ -1,4 +1,6 @@
 ---
+date: '2021-09-07'
+link: 'https://github.com/changyuyeo/book_search_app'
 title: 'Fast Library'
 type: 'solo'
 skills: { fe: ['vue', 'typescript', 'sass', 'bootstrap'], be: [''] }

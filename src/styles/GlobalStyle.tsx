@@ -51,6 +51,7 @@ const DefaultStyle = css`
 		--gray_2: #b0b0b022;
 		--hr: #d7d8db;
 		--primary: #ff6701;
+		--shadow: #aaa;
 	}
 
 	body.dark {
@@ -69,6 +70,7 @@ const DefaultStyle = css`
 		--gray_2: #70707022;
 		--hr: #707070;
 		--primary: #d35400;
+		--shadow: #111;
 	}
 	@font-face {
 		font-family: 'Product Sans';

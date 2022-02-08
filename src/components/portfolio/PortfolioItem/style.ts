@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { motion } from 'framer-motion'
 import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 
@@ -16,9 +17,17 @@ export const ProtfolioLink = styled(Link)`
 	display: flex;
 `
 
+export const Hover = styled(motion.div)`
+	transform-origin: right;
+	@media ${({ theme }) => theme.device.tablet} {
+		transform-origin: center;
+	}
+`
+
 export const ThumbnailImage = styled(GatsbyImage)`
 	width: 400px;
 	border-radius: 5px;
+	box-shadow: 3px 3px 6px 0 var(--shadow);
 	@media ${({ theme }) => theme.device.tabletL} {
 		width: 300px;
 	}

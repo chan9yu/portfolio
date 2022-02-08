@@ -11,6 +11,10 @@ const Container = styled.div`
 	bottom: 20px;
 	z-index: 10;
 	cursor: pointer;
+	transition: 0.3s;
+	&:hover {
+		filter: brightness(70%);
+	}
 `
 
 const Switch = styled.div`

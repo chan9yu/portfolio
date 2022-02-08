@@ -1,4 +1,6 @@
 ---
+date: '2021-12-15'
+link: 'https://github.com/17s-of-Tears/Bongoose-FE'
 title: 'Bongoose'
 type: 'team'
 skills:
