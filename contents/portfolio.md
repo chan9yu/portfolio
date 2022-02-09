@@ -1,3 +1,31 @@
+---
+date: '2022-02-09'
+link: 'https://github.com/changyuyeo/my_portfolio'
+title: '개인 포트폴리오 웹'
+type: 'solo'
+skills:
+  {
+    fe:
+      [
+        'react',
+        'gatsby',
+        'typescript',
+        'emotion',
+        'graphql',
+        'framer-motion',
+        'netlify'
+      ],
+    be: ['']
+  }
+description:
+  [
+    'react와 Gatsby 기반으로 만든 개인 포트폴리오 웹앱 입니다!',
+    '정적 웹사이트를 만들기위해 Gatsby라는 프레임워크를 접하였고 공부를 하면서 만들었으며 꾸준히 업데이트 중입니다!',
+    'SSG와 JAM Stack 에 대해 이해할수 있었고 많은 것을 배울 수 있는 프로젝트 였습니다!'
+  ]
+thumbnail: './thumbnail/portfolio.png'
+---
+
 <p align="center">
   <img alt="Gatsby" src="https://user-images.githubusercontent.com/80776262/149664518-9bc8c0c8-ad5f-4bcd-9f1c-15ff079911cc.png" width="250" />
 </p>
