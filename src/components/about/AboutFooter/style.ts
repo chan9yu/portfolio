@@ -21,7 +21,7 @@ export const AboutFooterContainer = styled.div`
 		}
 	}
 	.footer__text {
-		font-size: ${({ theme }) => theme.fontSizes.xl};
+		font-size: ${({ theme }) => theme.fontSizes.lg};
 		line-height: 1.6;
 		.primary {
 			color: var(--primary);
