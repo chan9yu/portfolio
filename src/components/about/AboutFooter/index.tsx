@@ -23,7 +23,7 @@ const AboutFooter = () => {
 				원래는 <span className="primary">Next.js</span>로 개발을 시작하려
 				했으나,
 				<br />
-				이번 포트폴리오 웹 프로젝트를 진행하면서
+				이번 포트폴리오 웹 프로젝트를 진행하면서&nbsp;
 				<span className="primary">Gatsby</span>라는 프레임워크를 알게
 				되었습니다.
 				<br />그 외로 <span className="primary">SSG, JAM Stack 등</span> 새로운

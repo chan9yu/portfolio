@@ -69,9 +69,13 @@ export const Description = styled.div`
 	background-color: var(--gray_2);
 	padding: 10px;
 	border-radius: 5px;
-	span {
+	.description_item {
 		display: flex;
-		align-items: center;
-		gap: 10px;
+		gap: 5px;
+		span {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
 	}
 `

@@ -76,6 +76,7 @@ const SkillBox: FC<Props> = ({ items, title }) => {
 									src={items[feItemCurrentIndex(id)].img}
 									alt={items[feItemCurrentIndex(id)].name}
 									layoutId={`img-${id}`}
+									width="40%"
 								/>
 								<motion.span layoutId={`title-${id}`} className="acive_title">
 									{items[feItemCurrentIndex(id)].name}

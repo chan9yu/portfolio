@@ -1,7 +1,6 @@
 import { FC, useMemo } from 'react'
-import { BsPinAngleFill } from 'react-icons/bs'
-import { IPortfolioFrontmatterType } from 'types/PortfolioItem.types'
 
+import { IPortfolioFrontmatterType } from 'types/PortfolioItem.types'
 import {
 	Description,
 	Hover,
@@ -61,10 +60,10 @@ const PortfolioItem: FC<Props> = props => {
 				)}
 				<Description>
 					{description.map(v => (
-						<span key={v}>
-							<BsPinAngleFill />
-							{v}
-						</span>
+						<div key={v} className="description_item">
+							<div>📌</div>
+							<span>{v}</span>
+						</div>
 					))}
 				</Description>
 			</ProtfolioInfo>

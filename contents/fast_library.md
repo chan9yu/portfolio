@@ -6,8 +6,8 @@ type: 'solo'
 skills: { fe: ['vue', 'typescript', 'sass', 'bootstrap'], be: [''] }
 description:
   [
-    '검색 하나로 책에 대한 정보를 빠르게 얻을 수 있는 Fast Library 입니다!',
-    '온라인 vue 스터디에 참여해 사람들끼리 공부를하며 처음으로 혼자서 만든 프로젝트입니다.',
+    '검색 하나로 책에 대한 정보를 빠르게 얻을 수 있는 도서검색 웹 애플리케이션입니다!',
+    '온라인 vue 스터디에 참여해 사람들끼리 공부를 하며 처음으로 혼자서 만든 프로젝트입니다.',
     'vue와 typescript를 사용하였고 카카오 오픈 API을 이용해 만들어졌습니다.'
   ]
 thumbnail: './thumbnail/fast_library.png'

@@ -39,7 +39,7 @@ export const Item = styled(motion.div)`
 	align-items: center;
 	gap: 15px;
 	> img {
-		width: 45%;
+		width: 50%;
 	}
 	.skill__name {
 		font-size: ${({ theme }) => theme.fontSizes.lg};
