@@ -84,7 +84,9 @@ const SkillBox: FC<Props> = ({ items, title }) => {
 							</div>
 							<div className="active_description">
 								{items[feItemCurrentIndex(id)].content.map(v => (
-									<span key={v}>{v}</span>
+									<div key={v}>
+										🔍<span>{v}</span>
+									</div>
 								))}
 							</div>
 						</ActiveItem>

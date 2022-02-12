@@ -3,8 +3,9 @@ import styled from '@emotion/styled'
 export const InputContainer = styled.div`
 	width: 100%;
 	height: 50px;
-	border: 2px solid var(--gray);
+	border: 1px solid var(--hr);
 	border-radius: 25px;
+	box-shadow: inset 0px 1px 5px 0 rgba(0, 0, 0, 0.1);
 	position: relative;
 	display: flex;
 	align-items: center;

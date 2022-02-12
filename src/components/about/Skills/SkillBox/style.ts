@@ -71,6 +71,11 @@ export const ActiveItem = styled(Item)`
 		flex-direction: column;
 		gap: 10px;
 		font-size: ${({ theme }) => theme.fontSizes.lg};
+		> div {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+		}
 	}
 	@media ${({ theme }) => theme.device.mobileL} {
 		width: 80%;

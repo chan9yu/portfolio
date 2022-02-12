@@ -6,7 +6,7 @@ export const HeaderWarpper = styled.header`
 	align-items: center;
 	padding: 10px 50px;
 	box-sizing: border-box;
-	border-bottom: 2px solid var(--hr);
+	border-bottom: 1px solid var(--hr);
 	background-color: transparent;
 	position: relative;
 	z-index: 10;

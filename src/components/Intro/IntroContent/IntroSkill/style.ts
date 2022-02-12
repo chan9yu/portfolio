@@ -36,9 +36,11 @@ export const SkillBox = styled(motion.div)<{ index: number }>`
 	gap: 10px;
 	transition: 0.3s;
 	z-index: ${({ index }) => index};
-	cursor: pointer;
 	&:hover {
 		filter: brightness(90%);
+	}
+	&:last-child {
+		cursor: pointer;
 	}
 	@media ${({ theme }) => theme.device.mobileL} {
 		gap: 5px;

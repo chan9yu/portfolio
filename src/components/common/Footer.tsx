@@ -6,7 +6,7 @@ import Logo from './Logo'
 
 const Container = styled.footer`
 	padding: 15px 0;
-	border-top: 2px solid var(--hr);
+	border-top: 1px solid var(--hr);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
