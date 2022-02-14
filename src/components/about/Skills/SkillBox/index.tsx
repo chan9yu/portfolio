@@ -1,5 +1,5 @@
 import { FC, useCallback, useMemo, useState } from 'react'
-import { AnimatePresence } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 
 import { Item, Wrapper, Grid, Overlay, ActiveItem } from './style'
 
@@ -48,8 +48,17 @@ const SkillBox: FC<Props> = ({ items, title }) => {
 						variants={itemVariants}
 						whileHover="hover"
 					>
-						<img src={item.img} alt={item.name} />
-						<span className="skill__name">{item.name}</span>
+						<motion.img
+							src={item.img}
+							alt={item.name}
+							layoutId={`img-${item.name}`}
+						/>
+						<motion.span
+							layoutId={`title-${item.name}`}
+							className="skill__name"
+						>
+							{item.name}
+						</motion.span>
 					</Item>
 				))}
 			</Grid>
@@ -63,13 +72,14 @@ const SkillBox: FC<Props> = ({ items, title }) => {
 					>
 						<ActiveItem layoutId={`item-${id}`}>
 							<div className="acive_header">
-								<img
+								<motion.img
 									src={items[feItemCurrentIndex(id)].img}
 									alt={items[feItemCurrentIndex(id)].name}
+									layoutId={`img-${id}`}
 								/>
-								<span className="acive_title">
+								<motion.span layoutId={`title-${id}`} className="acive_title">
 									{items[feItemCurrentIndex(id)].name}
-								</span>
+								</motion.span>
 							</div>
 							<div className="active_description">
 								{items[feItemCurrentIndex(id)].content.map(v => (
