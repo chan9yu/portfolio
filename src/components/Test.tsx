@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
 export default function Test() {
-  console.log("### TEST");
+	console.log('### TEST');
 
-  return null;
+	return null;
 }

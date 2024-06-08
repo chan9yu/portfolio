@@ -1,27 +1,62 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.1"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.1"
-  }
+	"name": "chan9yu-portfolio",
+	"private": true,
+	"version": "0.0.1",
+	"description": "📄 A modern, static portfolio website built with Next.js to showcase projects and skills.",
+	"author": "chan9yu <wry5533@gmail.com>",
+	"packageManager": "pnpm@9.2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chan9yu/chan9yu-portfolio"
+	},
+	"lint-staged": {
+		"**/*.{ts,tsx}": [
+			"eslint --fix",
+			"prettier --write"
+		]
+	},
+	"config": {
+		"cz-customizable": {
+			"config": "./config/cz-config.js"
+		}
+	},
+	"scripts": {
+		"dev": "next dev -p 3080",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"commit": "./node_modules/cz-customizable/standalone.js",
+		"prepare": "husky install",
+		"husky:permission": "chmod +x .husky/*"
+	},
+	"dependencies": {
+		"next": "^14.2.3",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.3.0",
+		"@commitlint/config-conventional": "^19.2.2",
+		"@types/node": "^20.14.2",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"@typescript-eslint/eslint-plugin": "^7.12.0",
+		"@typescript-eslint/parser": "^7.12.0",
+		"@vanilla-extract/next-plugin": "^2.4.1",
+		"commitizen": "^4.3.0",
+		"cz-customizable": "6.3.0",
+		"eslint": "8",
+		"eslint-config-next": "^14.2.3",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-config-react-app": "^7.0.1",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-jsx-a11y": "^6.8.0",
+		"eslint-plugin-prettier": "^5.1.3",
+		"eslint-plugin-react": "^7.34.2",
+		"eslint-plugin-react-hooks": "^4.6.2",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.5",
+		"prettier": "^3.3.1",
+		"typescript": "^5.4.5"
+	}
 }
